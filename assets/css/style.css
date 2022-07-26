@@ -1,0 +1,15 @@
+/* set page style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* sets background image and font style */
+body {
+    background: url("/assets/images/mountains.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Amatic SC", cursive, sans-serif;
+}
