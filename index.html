@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Rock, paper, scissors lizard, spock game" />
+    <title>Rock Paper Scissors Lizard Spock Game</title>
+
+    <!-- Font-awesome link -->
+    <script src="https://kit.fontawesome.com/6ae877c4cb.js" crossorigin="anonymous"></script>
+
+    <!-- link to css stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google Fonts (Amatic SC) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
+
+    <meta name="theme-color" content="rgb(47, 84, 206)" />
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+</head>
+
+<body>
+    <header>
+        <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
+    </header>
+
+    <div class="scores">
+        <p>Scoreboard</p>
+        <div id="userback" class="player">
+            User: <span id="user-score">0</span>
+        </div>
+        <div id="compback" class="player">
+            Comp: <span id="computer-score">0</span>
+        </div>
+    </div>
+
+    <div class="results">
+        <p>Are you ready to play?! (Best of ten rounds.)</p>
+    </div>
+
+    <div class="choices">
+        <div id="r" class="choice">
+            <img src="assets/images/rock.webp" alt="rock hand icon" width="100" height="100" />
+        </div>
+        <div id="p" class="choice">
+            <img src="assets/images/paper.webp" alt="paper hand icon" width="100" height="100" />
+        </div>
+        <div id="s" class="choice">
+            <img src="assets/images/scissors.webp" alt="scissors hand icon" width="100" height="100" />
+        </div>
+        <div id="l" class="choice">
+            <img src="assets/images/lizard.webp" alt="lizard hand icon" width="100" height="100" />
+        </div>
+        <div id="v" class="choice">
+            <img src="assets/images/spock.webp" alt="spock hand icon" width="100" height="100" />
+        </div>
+    </div>
+
+    <div class="rules">
+        <p>
+            Click on the icon of your choice and see if you can beat the
+            computer.<br />The rules are: Scissors CUTS Paper! - Paper COVERS Rock!
+            - Rock CRUSHES Lizard! - Lizard POISONS Spock! - Spock SMASHES Scissors!
+            - Scissors DECAPITATES Lizard! - Lizard EATS Paper! - Paper DISPROVES
+            Spock! - Spock VAPOURISES Rock! - (and as it always has) Rock CRUSHES
+            Scissors! - Good Luck!!
+        </p>
+    </div>
