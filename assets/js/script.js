@@ -11,3 +11,12 @@ const lizard_div = document.getElementById("l");
 const spock_div = document.getElementById("v");
 
 
+/**
+ * Random choice generator for computer player
+ */
+function getComputerChoice() {
+    let choices= ["r", "p", "s", "l", "v"];
+    let randomNumber = Math.floor(Math.random()*5);
+    return choices[randomNumber];
+}
+
