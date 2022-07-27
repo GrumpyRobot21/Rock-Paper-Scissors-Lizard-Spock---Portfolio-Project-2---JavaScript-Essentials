@@ -20,3 +20,15 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
+/**
+ * converts user and computer choices into text for results display purposes
+ */
+function convertToWord(letter) {
+    if (letter === "r") return "Rock"
+    if (letter === "p") return "Paper"
+    if (letter === "s") return "Scissors"
+    if (letter === "l") return "Lizard"
+    return "Spock";
+}
+
+
