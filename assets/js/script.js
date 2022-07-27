@@ -54,6 +54,36 @@ function win(userChoice, computerChoice) {
     if (userScore === 10) {
         endGame()
     } else {
-        user
+        // displays numerical score results for user and computer
+        userScore_span.innerHTML = userScore;
+        computerScore_span.innerHTML = computerScore;
+        //displays both choices and outcome
+        results_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You Win!`
     }
+}
+
+/**
+ * Declares loss for user when computer wins and amends computer score total
+ */
+function lose(userChoice, computerChoice) {
+    computerScore++
+// Briefly changes background colour of comp score div to indicate the win
+setToBlue();
+function setToBlue() {
+    document.getElementById("compback").style.background = "#1adbf4";
+    setTimeout(function() {setNormal}, 100)
+}
+function setNormal () {
+    document.getElementById("compback").style.background = "#2f54ce";
+}
+
+if (computerScore === 10) {
+    endGame();
+} else {
+    // displays numerical score results for user and computer
+    userScore_span.innerHTML = userScore;
+    computerScore.innerHTML = computerScore;
+    // displays both choices and outcome
+    results_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You Lost....`
+   }  
 }
