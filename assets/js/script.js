@@ -2,7 +2,7 @@
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
-const computerScore_span =document.getElementById("computer-score");
+const computerScore_span = document.getElementById("computer-score");
 const results_p = document.querySelector(".results > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
@@ -15,8 +15,8 @@ const spock_div = document.getElementById("v");
  * Random choice generator for computer player
  */
 function getComputerChoice() {
-    let choices= ["r", "p", "s", "l", "v"];
-    let randomNumber = Math.floor(Math.random()*5);
+    let choices = ["r", "p", "s", "l", "v"];
+    let randomNumber = Math.floor(Math.random() * 5);
     return choices[randomNumber];
 }
 
@@ -31,4 +31,29 @@ function convertToWord(letter) {
     return "Spock";
 }
 
+/**
+ * Decalres win for user when computer loses and amends user score total
+ */
+function win(userChoice, computerChoice) {
+    userScore++
 
+    //Briefly changes background colour of user score div to indicate the win
+    changeCol()
+
+    function changeCol() {
+        document.getElementById("userback").style.background = "#1adbf4";
+        setTimeout(function () {
+            setNormal()
+        }, 100)
+    }
+
+    function setNormal() {
+        document.getElementById("userback").style.background = "#2f54ce"
+    }
+
+    if (userScore === 10) {
+        endGame()
+    } else {
+        user
+    }
+}
