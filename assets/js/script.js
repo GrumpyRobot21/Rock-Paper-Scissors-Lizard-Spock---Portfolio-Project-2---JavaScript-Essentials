@@ -87,3 +87,11 @@ if (computerScore === 10) {
     results_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You Lost....`
    }  
 }
+
+/**
+ * Declares a draw if user and computer make same choice
+ */
+function draw(userChoice, computerChoice) {
+    results_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It's a Draw!!`
+}
+
