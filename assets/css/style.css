@@ -13,3 +13,19 @@ body {
     background-size: cover;
     font-family: "Amatic SC", cursive, sans-serif;
 }
+
+/* Header styling */
+header {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    font-family: "Amatic SC", cursive, sans-serif;
+    min-height: 100px;
+  }
+  
+  header > h1 {
+    color: white;
+    font-family: "Amatic SC", cursive, sans-serif;
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+  }
