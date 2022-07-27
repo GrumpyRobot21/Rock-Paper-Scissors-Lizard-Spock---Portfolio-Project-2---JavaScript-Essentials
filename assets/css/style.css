@@ -83,3 +83,26 @@ header>h1 {
     margin-bottom: 5%;
     margin-top: 5%;
   }
+
+  /* Game icon styling and layout */
+
+.choices {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .choice {
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px;
+    display: inline-block;
+    background: #2f54ce;
+    transition: all 0.2s ease;
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background: #1adbf4;
+    transform: scale(1.1);
+  }
