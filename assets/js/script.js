@@ -117,7 +117,7 @@ function endGame(win, lose) {
         clear.remove();
 
         //plays short audio clip to signify game lost
-        let loseSound = new Audio("./audio/loseSound.wav");
+        let loseSound = new Audio("assets/audio/loseSound.wav");
         loseSound.play();
     } else if (userScore === 10) {
 
@@ -129,7 +129,7 @@ function endGame(win, lose) {
         results_p.innerHTML = `Well done, you won ${userScore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`;
 
         //plays short audio clip to signify game won
-        let winSound = new Audio("./assets/audio/winSound.wav");
+        let winSound = new Audio("assets/audio/winSound.wav");
         winSound.play();
 
         //Resets game after 7 seconds once winner is declared
