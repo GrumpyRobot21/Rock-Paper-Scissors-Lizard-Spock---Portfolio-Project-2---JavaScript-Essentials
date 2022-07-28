@@ -188,6 +188,12 @@ function endGame(win, lose) {
      * Gameplay event listeners for user icon choices
      */
 function main() {
-    
+    rock_div.addEventListener("click", function() {playGame("r")});
+    paper_div.addEventListener("click", function() {playGame("p")});
+    scissors_div.addEventListener("click", function() {playGame("s")});
+    lizard_div.addEventListener("click", function() {playGame("l")});
+    spock_div.addEventListener("click", function() {playGame("v")});
 }
+
+main();
 
