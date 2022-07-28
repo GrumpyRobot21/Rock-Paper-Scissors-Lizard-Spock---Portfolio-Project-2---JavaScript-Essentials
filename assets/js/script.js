@@ -51,17 +51,15 @@ function win(userChoice, computerChoice) {
     }
 
     if (userScore === 10) {
-        endGame();
-    } else {
-
-        // displays numerical score results for user and computer
-        userScore_span.innerHTML = userScore;
-        computerScore_span.innerHTML = computerScore;
-
-        //displays both choices and outcome
-        results_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You Win!`;
+        endGame()
+      } else {
+        userScore_span.innerHTML = userScore
+        computerScore_span.innerHTML = computerScore //displays numerical score results for user and computer
+        results_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(
+          computerChoice
+        )}. You Win!!!`;
+      }
     }
-}
 
 /**
  * Declares loss for user when computer wins and amends computer score total
@@ -84,17 +82,15 @@ function lose(userChoice, computerChoice) {
     }
 
     if (computerScore === 10) {
-        endGame();
-    } else {
-
-        // displays numerical score results for user and computer
-        userScore_span.innerHTML = userScore;
-        computerScore.innerHTML = computerScore;
-
-        // displays both choices and outcome
-        results_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You Lost....`;
+        endGame()
+      } else {
+        userScore_span.innerHTML = userScore
+        computerScore_span.innerHTML = computerScore //displays numerical score results for user and computer
+        results_p.innerHTML = `${convertToWord(
+          userChoice
+        )} loses to ${convertToWord(computerChoice)}. You Lost...`;
+      }
     }
-}
 
 /**
  * Declares a draw if user and computer make same choice
@@ -106,7 +102,6 @@ function draw(userChoice, computerChoice) {
 /**
  * Declares winner after 10 rounds then resets game
  */
-
 function endGame(win, lose) {
     if (computerScore === 10) {
 
@@ -122,7 +117,7 @@ function endGame(win, lose) {
         clear.remove();
 
         //plays short audio clip to signify game lost
-        let loseSound = new Audio("./audio/");
+        let loseSound = new Audio("./audio/loseSound.wav");
         loseSound.play();
     } else if (userScore === 10) {
 
@@ -189,21 +184,21 @@ function playGame(userChoice) {
  * Gameplay event listeners for user icon choices
  */
 function main() {
-    rock_div.addEventListener("click", function() {
+    rock_div.addEventListener("click", function () {
         playGame("r");
     });
-    paper_div.addEventListener("click", function() {
+    paper_div.addEventListener("click", function () {
         playGame("p");
     });
-    scissors_div.addEventListener("click", function() {
+    scissors_div.addEventListener("click", function () {
         playGame("s");
     });
-    lizard_div.addEventListener("click", function() {
+    lizard_div.addEventListener("click", function () {
         playGame("l");
     });
-    spock_div.addEventListener("click", function() {
+    spock_div.addEventListener("click", function () {
         playGame("v");
     });
 }
 
-main(),
+main();
