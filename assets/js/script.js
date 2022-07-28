@@ -1,4 +1,3 @@
-// caching the DOM and connecting HTML elements with variables for easier debugging
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
@@ -24,10 +23,10 @@ function getComputerChoice() {
  * converts user and computer choices into text for results display purposes
  */
 function convertToWord(letter) {
-    if (letter === "r") return "Rock"
-    if (letter === "p") return "Paper"
-    if (letter === "s") return "Scissors"
-    if (letter === "l") return "Lizard"
+    if (letter === "r") return "Rock";
+    if (letter === "p") return "Paper";
+    if (letter === "s") return "Scissors";
+    if (letter === "l") return "Lizard";
     return "Spock";
 }
 
@@ -35,24 +34,24 @@ function convertToWord(letter) {
  * Decalres win for user when computer loses and amends user score total
  */
 function win(userChoice, computerChoice) {
-    userScore++
+    userScore++;
 
     //Briefly changes background colour of user score div to indicate the win
-    changeCol()
+    changeCol();
 
     function changeCol() {
         document.getElementById("userback").style.background = "#1adbf4";
         setTimeout(function () {
-            setNormal()
-        }, 100)
+            setNormal();
+        }, 100);
     }
 
     function setNormal() {
-        document.getElementById("userback").style.background = "#2f54ce"
+        document.getElementById("userback").style.background = "#2f54ce";
     }
 
     if (userScore === 10) {
-        endGame()
+        endGame();
     } else {
 
         // displays numerical score results for user and computer
@@ -60,7 +59,7 @@ function win(userChoice, computerChoice) {
         computerScore_span.innerHTML = computerScore;
 
         //displays both choices and outcome
-        results_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You Win!`
+        results_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You Win!`;
     }
 }
 
@@ -68,7 +67,7 @@ function win(userChoice, computerChoice) {
  * Declares loss for user when computer wins and amends computer score total
  */
 function lose(userChoice, computerChoice) {
-    computerScore++
+    computerScore++;
 
     // Briefly changes background colour of comp score div to indicate the win
     setToBlue();
@@ -76,8 +75,8 @@ function lose(userChoice, computerChoice) {
     function setToBlue() {
         document.getElementById("compback").style.background = "#1adbf4";
         setTimeout(function () {
-            setNormal
-        }, 100)
+            setNormal();
+        }, 100);
     }
 
     function setNormal() {
@@ -93,7 +92,7 @@ function lose(userChoice, computerChoice) {
         computerScore.innerHTML = computerScore;
 
         // displays both choices and outcome
-        results_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You Lost....`
+        results_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You Lost....`;
     }
 }
 
@@ -101,7 +100,7 @@ function lose(userChoice, computerChoice) {
  * Declares a draw if user and computer make same choice
  */
 function draw(userChoice, computerChoice) {
-    results_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It's a Draw!!`
+    results_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It's a Draw!!`;
 }
 
 /**
@@ -116,7 +115,7 @@ function endGame(win, lose) {
         element.style.backgroundColor = "red";
 
         //announces computer win and loss for player
-        results_p, innerHTML = `Bad luck, the computer won ${computerScore} rounds. You lost the game!!! (The Game will restart shortly. Have another go!).`;
+        results_p.innerHTML = `Bad luck, the computer won ${computerScore} rounds. You lost the game!!! (The Game will restart shortly. Have another go!).`;
 
         //Clears icon images from gameplay area
         let clear = document.querySelector(".choices");
@@ -139,7 +138,7 @@ function endGame(win, lose) {
         winSound.play();
 
         //Resets game after 7 seconds once winner is declared
-        setTimeout(function() {location.reload()},7000);
+        setTimeout(function() {location.reload()}, 7000);
     }
 }
 
@@ -160,8 +159,8 @@ function endGame(win, lose) {
     case "lp":
     case "pv":
     case "vr":
-      win(userChoice, computerChoice)
-      break
+      win(userChoice, computerChoice);
+      break;
     case "rp":
     case "ps":
     case "sr":
@@ -172,15 +171,15 @@ function endGame(win, lose) {
     case "pl":
     case "vp":
     case "rv":
-      lose(userChoice, computerChoice)
-      break
+      lose(userChoice, computerChoice);
+      break;
     case "rr":
     case "pp":
     case "ss":
     case "ll":
     case "vv":
-      draw(userChoice, computerChoice)
-      break
+      draw(userChoice, computerChoice);
+      break;
         }
     }
 
