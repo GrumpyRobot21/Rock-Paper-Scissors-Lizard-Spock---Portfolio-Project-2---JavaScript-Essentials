@@ -31,7 +31,7 @@ function convertToWord(letter) {
 }
 
 /**
- * Decalres win for user when computer loses and amends user score total
+ * Declares win for user when computer loses and amends user score total
  */
 function win(userChoice, computerChoice) {
     userScore++;
@@ -122,7 +122,7 @@ function endGame(win, lose) {
         clear.remove();
 
         //plays short audio clip to signify game lost
-        let loseSound = new Audio("assets/audio/loseSound.wav");
+        let loseSound = new Audio("./audio/");
         loseSound.play();
     } else if (userScore === 10) {
 
@@ -133,66 +133,77 @@ function endGame(win, lose) {
         //announces win for player
         results_p.innerHTML = `Well done, you won ${userScore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`;
 
-        //plays short audio clip to signity game won
-        let winSound = new Audio("assets/audio/winSound.wav");
+        //plays short audio clip to signify game won
+        let winSound = new Audio("./assets/audio/winSound.wav");
         winSound.play();
 
         //Resets game after 7 seconds once winner is declared
-        setTimeout(function() {location.reload()}, 7000);
+        setTimeout(function () {
+            location.reload();
+        }, 7000);
     }
 }
 
-    /**
-     * Defines winning scenarios, losing scenarios and draw scenarios
-     */
+/**
+ * Defines winning scenarios, losing scenarios and draw scenarios
+ */
 
-    function playGame(userChoice) {
-        const computerChoice = getComputerChoice();
-        switch (userChoice, computerChoice) {
-            case "rs":
-    case "pr":
-    case "sp":
-    case "rl":
-    case "lv":
-    case "vs":
-    case "sl":
-    case "lp":
-    case "pv":
-    case "vr":
-      win(userChoice, computerChoice);
-      break;
-    case "rp":
-    case "ps":
-    case "sr":
-    case "lr":
-    case "vl":
-    case "sv":
-    case "ls":
-    case "pl":
-    case "vp":
-    case "rv":
-      lose(userChoice, computerChoice);
-      break;
-    case "rr":
-    case "pp":
-    case "ss":
-    case "ll":
-    case "vv":
-      draw(userChoice, computerChoice);
-      break;
-        }
+function playGame(userChoice) {
+    const computerChoice = getComputerChoice();
+    switch (userChoice + computerChoice) {
+        case "rs":
+        case "pr":
+        case "sp":
+        case "rl":
+        case "lv":
+        case "vs":
+        case "sl":
+        case "lp":
+        case "pv":
+        case "vr":
+            win(userChoice, computerChoice);
+            break;
+        case "rp":
+        case "ps":
+        case "sr":
+        case "lr":
+        case "vl":
+        case "sv":
+        case "ls":
+        case "pl":
+        case "vp":
+        case "rv":
+            lose(userChoice, computerChoice);
+            break;
+        case "rr":
+        case "pp":
+        case "ss":
+        case "ll":
+        case "vv":
+            draw(userChoice, computerChoice);
+            break;
     }
+}
 
-    /**
-     * Gameplay event listeners for user icon choices
-     */
+/**
+ * Gameplay event listeners for user icon choices
+ */
 function main() {
-    rock_div.addEventListener("click", function() {playGame("r")});
-    paper_div.addEventListener("click", function() {playGame("p")});
-    scissors_div.addEventListener("click", function() {playGame("s")});
-    lizard_div.addEventListener("click", function() {playGame("l")});
-    spock_div.addEventListener("click", function() {playGame("v")});
+    rock_div.addEventListener("click", function() {
+        playGame("r");
+    });
+    paper_div.addEventListener("click", function() {
+        playGame("p");
+    });
+    scissors_div.addEventListener("click", function() {
+        playGame("s");
+    });
+    lizard_div.addEventListener("click", function() {
+        playGame("l");
+    });
+    spock_div.addEventListener("click", function() {
+        playGame("v");
+    });
 }
 
-main();
-
+main(),
