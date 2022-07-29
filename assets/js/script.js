@@ -1,8 +1,8 @@
 /**
  * create game variables
  */
-let userScore = 0
-let computerScore = 0
+let uscore = 0
+let comScore = 0
 const uScoreS = document.getElementById("user-score")
 const compScoreS = document.getElementById("computer-score")
 const resultsP = document.querySelector(".score")
@@ -36,7 +36,7 @@ function changeToWord(letter) {
  * Declares win for user when computer loses and amends user score total
  */
 function win(uchoice, compChoice) {
-  userScore++;
+  uscore++;
   // Briefly changes background color of user score div to indicate the win
   function changeCol() {
     document.getElementById("userback").style.background = "#1adbf4"
@@ -46,17 +46,18 @@ function win(uchoice, compChoice) {
   }
   changeCol();
 
+  // changes user score div back to original colour
   function setNormal() {
     document.getElementById("userback").style.background = "#2f54ce"
   }
 
-  if (userScore === 10) {
+  if (uscore === 10) {
     // calls endGame function if user score is 10
     endgame();
   } else {
     //displays numerical score results for user and computer and game continues
-    uScoreS.innerHTML = userScore
-    compScoreS.innerHTML = computerScore
+    uScoreS.innerHTML = uscore
+    compScoreS.innerHTML = comScore
     resultsP.innerHTML = `${changeToWord(uchoice)} beats ${changeToWord(
       compChoice
     )}. You Win!!!`;
@@ -67,7 +68,7 @@ function win(uchoice, compChoice) {
  * Declares loss for user when computer wins and amends computer score total
  */
 function lose(uchoice, compChoice) {
-  computerScore++
+  comScore++
   // Briefly changes background color of comp score div to indicate the win
   function setToBlue() {
     document.getElementById("compback").style.background = "#1adbf4"
@@ -77,17 +78,18 @@ function lose(uchoice, compChoice) {
   }
   setToBlue();
 
+  // changes computer score div back to original colour
   function setNormal() {
     document.getElementById("compback").style.background = "#2f54ce"
   }
 
-  if (computerScore === 10) {
+  if (comScore === 10) {
     // calls endGame function if computer score is 10
     endgame();
   } else {
     //displays numerical score results for user and computer and game continues
-    uScoreS.innerHTML = userScore
-    compScoreS.innerHTML = computerScore
+    uScoreS.innerHTML = uscore
+    compScoreS.innerHTML = comScore
     resultsP.innerHTML = `${changeToWord(
       uchoice
     )} loses to ${changeToWord(compChoice)}. You Lost...`;
@@ -107,10 +109,10 @@ function draw(uchoice, compChoice) {
  * Declares winner after 10 rounds then resets game.
  */
 function endgame(win, lose) {
-  if (computerScore === 10) {
+  if (comScore === 10) {
     let element = document.querySelector(".score")
     element.style.backgroundColor = "red" // changes result output background-colour for lose scenario
-    resultsP.innerHTML = `Bad luck, the computer won ${computerScore} rounds. You lost the game!!! (The Game will restart shortly. Have another go!).`
+    resultsP.innerHTML = `Bad luck, the computer won ${comScore} rounds. You lost the game!!! (The Game will restart shortly. Have another go!).`
 
     // clears icon images from gameplay area
     let clear = document.querySelector(".choices")
@@ -121,10 +123,10 @@ function endgame(win, lose) {
       "assets/audio/loseSound.wav"
     )
     loseSound.play();
-  } else if (userScore === 10) {
+  } else if (uscore === 10) {
     let element = document.querySelector(".score")
     element.style.backgroundColor = "green" // changes result output background-colour for win scenario
-    resultsP.innerHTML = `Well done, you won ${userScore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`
+    resultsP.innerHTML = `Well done, you won ${uscore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`
     
     // clears icon images from gameplay area
     let clear = document.querySelector(".choices")
