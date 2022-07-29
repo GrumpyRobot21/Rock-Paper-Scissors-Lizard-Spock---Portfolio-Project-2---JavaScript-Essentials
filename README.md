@@ -149,7 +149,7 @@ The [Wave Accessibilty testing tool](https://wave.webaim.org/) was used to check
 
 The colour contrast was AAA rated.
 
-![WebLife](/assets/images/wave-page-contrast-result.png)
+![WebLife](/assets/images/contrast-test.png)
 
 - ### **User Testing**
 

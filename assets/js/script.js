@@ -3,19 +3,19 @@
  */
 let userScore = 0
 let computerScore = 0
-const userScoreSpan = document.getElementById("user-score")
-const computerScoreSpan = document.getElementById("computer-score")
+const uScoreS = document.getElementById("user-score")
+const compScoreS = document.getElementById("computer-score")
 const resultsP = document.querySelector(".score")
-const rockDiv = document.getElementById("r")
-const paperDiv = document.getElementById("p")
-const scissorsDiv = document.getElementById("s")
-const lizardDiv = document.getElementById("l")
-const spockDiv = document.getElementById("v")
+const rockD = document.getElementById("r")
+const paperD = document.getElementById("p")
+const scissorsD = document.getElementById("s")
+const lizardD = document.getElementById("l")
+const spockD = document.getElementById("v")
 
 /**
  * Random choice generator for computer player
  */
-function getComputerChoice() {
+function getcompChoice() {
   let choices = ["r", "p", "s", "l", "v"]
   let randomNumber = Math.floor(Math.random() * 5)
   return choices[randomNumber]
@@ -24,7 +24,7 @@ function getComputerChoice() {
 /**
  * converts user and computer choices into text for results display
  */
-function convertToWord(letter) {
+function changeToWord(letter) {
   if (letter === "r") return "Rock"
   if (letter === "p") return "Paper"
   if (letter === "s") return "Scissors"
@@ -35,7 +35,7 @@ function convertToWord(letter) {
 /**
  * Declares win for user when computer loses and amends user score total
  */
-function win(userChoice, computerChoice) {
+function win(uchoice, compChoice) {
   userScore++;
   // Briefly changes background color of user score div to indicate the win
   function changeCol() {
@@ -55,10 +55,10 @@ function win(userChoice, computerChoice) {
     endgame();
   } else {
     //displays numerical score results for user and computer and game continues
-    userScoreSpan.innerHTML = userScore
-    computerScoreSpan.innerHTML = computerScore
-    resultsP.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(
-      computerChoice
+    uScoreS.innerHTML = userScore
+    compScoreS.innerHTML = computerScore
+    resultsP.innerHTML = `${changeToWord(uchoice)} beats ${changeToWord(
+      compChoice
     )}. You Win!!!`;
   }
 }
@@ -66,7 +66,7 @@ function win(userChoice, computerChoice) {
 /**
  * Declares loss for user when computer wins and amends computer score total
  */
-function lose(userChoice, computerChoice) {
+function lose(uchoice, compChoice) {
   computerScore++
   // Briefly changes background color of comp score div to indicate the win
   function setToBlue() {
@@ -86,20 +86,20 @@ function lose(userChoice, computerChoice) {
     endgame();
   } else {
     //displays numerical score results for user and computer and game continues
-    userScoreSpan.innerHTML = userScore
-    computerScoreSpan.innerHTML = computerScore
-    resultsP.innerHTML = `${convertToWord(
-      userChoice
-    )} loses to ${convertToWord(computerChoice)}. You Lost...`;
+    uScoreS.innerHTML = userScore
+    compScoreS.innerHTML = computerScore
+    resultsP.innerHTML = `${changeToWord(
+      uchoice
+    )} loses to ${changeToWord(compChoice)}. You Lost...`;
   }
 }
 
 /**
  * Declares a draw if user and computer make same choice
  */
-function draw(userChoice, computerChoice) {
-  resultsP.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(
-    computerChoice
+function draw(uchoice, compChoice) {
+  resultsP.innerHTML = `${changeToWord(uchoice)} equals ${changeToWord(
+    compChoice
   )}. It's a Draw!!`
 }
 
@@ -146,9 +146,9 @@ function endgame(win, lose) {
 /**
  * Defines winning scenarios, losing scenarios and draw scenarios
  */
-function playGame(userChoice) {
-  const computerChoice = getComputerChoice()
-  switch (userChoice + computerChoice) {
+function playGame(uchoice) {
+  const compChoice = getcompChoice()
+  switch (uchoice + compChoice) {
     case "rs":
     case "pr":
     case "sp":
@@ -159,7 +159,7 @@ function playGame(userChoice) {
     case "lp":
     case "pv":
     case "vr":
-      win(userChoice, computerChoice)
+      win(uchoice, compChoice)
       break
     case "rp":
     case "ps":
@@ -171,14 +171,14 @@ function playGame(userChoice) {
     case "pl":
     case "vp":
     case "rv":
-      lose(userChoice, computerChoice)
+      lose(uchoice, compChoice)
       break
     case "rr":
     case "pp":
     case "ss":
     case "ll":
     case "vv":
-      draw(userChoice, computerChoice)
+      draw(uchoice, compChoice)
       break
   }
 }
@@ -187,23 +187,23 @@ function playGame(userChoice) {
  * Gameplay event listeners for player icon choices
  */
 function main() {
-  rockDiv.addEventListener("click", function () {
+  rockD.addEventListener("click", function () {
     playGame("r")
   })
 
-  paperDiv.addEventListener("click", function () {
+  paperD.addEventListener("click", function () {
     playGame("p")
   })
 
-  scissorsDiv.addEventListener("click", function () {
+  scissorsD.addEventListener("click", function () {
     playGame("s")
   })
 
-  lizardDiv.addEventListener("click", function () {
+  lizardD.addEventListener("click", function () {
     playGame("l")
   })
 
-  spockDiv.addEventListener("click", function () {
+  spockD.addEventListener("click", function () {
     playGame("v")
   })
 }
