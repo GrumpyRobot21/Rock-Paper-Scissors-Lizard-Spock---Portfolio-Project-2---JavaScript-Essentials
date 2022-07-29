@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Amatic SC", cursive, sans-serif;
 }
 
 /* sets background image and font style */
@@ -12,20 +13,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: "Amatic SC", cursive, sans-serif;
 }
 
 /* Header styling */
 header {
     background-color: rgb(0, 0, 0, 0.5);
     padding: 20px;
-    font-family: "Amatic SC", cursive, sans-serif;
     min-height: 100px;
 }
 
 header>h1 {
     color: white;
-    font-family: "Amatic SC", cursive, sans-serif;
     font-size: 3rem;
     align-items: center;
     text-align: center;
@@ -41,7 +39,6 @@ header>h1 {
     width: 220px;
     color: white;
     font-size: 40px;
-    font-family: "Amatic SC", cursive, sans-serif;
     position: relative;
     background-color: rgb(0, 0, 0, 0.5);
   }
@@ -61,7 +58,6 @@ header>h1 {
   .score {
     text-align: center;
     font-weight: bold;
-    font-family: "Amatic SC", cursive, sans-serif;
   }
   
   .player {
@@ -70,7 +66,6 @@ header>h1 {
     border-radius: 8px;
     font-size: 40px;
     padding: 2px 10px;
-    font-family: "Amatic SC", cursive, sans-serif;
     margin-bottom: 5%;
     margin-top: 5%;
   }

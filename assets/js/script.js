@@ -20,7 +20,7 @@ function getComputerChoice() {
 }
 
 /**
- * converts user and computer choices into text for results display purposes
+ * converts user and computer choices into text for results display
  */
 function convertToWord(letter) {
   if (letter === "r") return "Rock"
@@ -34,10 +34,8 @@ function convertToWord(letter) {
  * Declares win for user when computer loses and amends user score total
  */
 function win(userChoice, computerChoice) {
-  userScore++
-
+  userScore++;
   // Briefly changes background color of user score div to indicate the win
-
   function changeCol() {
     document.getElementById("userback").style.background = "#1adbf4"
     setTimeout(function () {
@@ -46,17 +44,17 @@ function win(userChoice, computerChoice) {
   }
   changeCol();
 
-
-
   function setNormal() {
     document.getElementById("userback").style.background = "#2f54ce"
   }
 
   if (userScore === 10) {
-    endgame()
+    // calls endGame function if user score is 10
+    endgame();
   } else {
+    //displays numerical score results for user and computer
     userScoreSpan.innerHTML = userScore
-    computerScoreSpan.innerHTML = computerScore //displays numerical score results for user and computer
+    computerScoreSpan.innerHTML = computerScore
     resultsP.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(
       computerChoice
     )}. You Win!!!`;
@@ -68,25 +66,26 @@ function win(userChoice, computerChoice) {
  */
 function lose(userChoice, computerChoice) {
   computerScore++
-
   // Briefly changes background color of comp score div to indicate the win
-  setToBlue()
   function setToBlue() {
     document.getElementById("compback").style.background = "#1adbf4"
     setTimeout(function () {
       setNormal()
     }, 100)
   }
+  setToBlue();
 
   function setNormal() {
     document.getElementById("compback").style.background = "#2f54ce"
   }
 
   if (computerScore === 10) {
-    endgame()
+    // calls endGame function if computer score is 10
+    endgame();
   } else {
+    //displays numerical score results for user and computer
     userScoreSpan.innerHTML = userScore
-    computerScoreSpan.innerHTML = computerScore //displays numerical score results for user and computer
+    computerScoreSpan.innerHTML = computerScore
     resultsP.innerHTML = `${convertToWord(
       userChoice
     )} loses to ${convertToWord(computerChoice)}. You Lost...`;
@@ -107,25 +106,26 @@ function draw(userChoice, computerChoice) {
  */
 function endgame(win, lose) {
   if (computerScore === 10) {
-    let element = document.querySelector(".results > p")
-    element.style.backgroundColor = "red" // changes result output background-colour
+    let element = document.querySelector(".score")
+    element.style.backgroundColor = "red" // changes result output background-colour for lose scenario
 
     resultsP.innerHTML = `Bad luck, the computer won ${computerScore} rounds. You lost the game!!! (The Game will restart shortly. Have another go!).`
 
     // clears icon images from gameplay area
     let clear = document.querySelector(".choices")
-    clear.remove()
+    clear.remove();
 
     //plays short audio file to signify game lost
     let loseSound = new Audio(
       "/assets/audio/loseSound.wav"
     )
-    loseSound.play()
+    loseSound.play();
   } else if (userScore === 10) {
     let element = document.querySelector(".score")
-    element.style.backgroundColor = "green" // changes result output background-colour
+    element.style.backgroundColor = "green" // changes result output background-colour for win scenario
 
     resultsP.innerHTML = `Well done, you won ${userScore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`
+    
     // clears icon images from gameplay area
     let clear = document.querySelector(".choices")
     clear.remove()
@@ -134,7 +134,7 @@ function endgame(win, lose) {
     let winSound = new Audio(
       "/assets/audio/winSound.wav"
     )
-    winSound.play()
+    winSound.play();
   }
 
   //resets game after 7 seconds once winner is declared
@@ -208,4 +208,4 @@ function main() {
   })
 }
 
-main()
+main();
