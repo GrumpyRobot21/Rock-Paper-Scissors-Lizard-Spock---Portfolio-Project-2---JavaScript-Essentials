@@ -1,5 +1,6 @@
 /* set page style */
 * {
+    cursor: pointer;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,17 +31,7 @@ header>h1 {
     text-align: center;
 }
 
-#mute {
-    padding-left: 1em;
-    text-align: end;
-    color: white;
-  }
-  
-  #mute:hover {
-    transform: scale(1.25);
-  }
-
-  /* scoreboard and player score styling */
+/* scoreboard and player score styling */
 .scores {
     margin: 20px auto;
     border: 3px solid white;
@@ -67,7 +58,7 @@ header>h1 {
     background-color: rgb(0, 0, 0, 0.5);
   }
   
-  .results > p {
+  .score {
     text-align: center;
     font-weight: bold;
     font-family: "Amatic SC", cursive, sans-serif;
@@ -85,8 +76,7 @@ header>h1 {
   }
 
   /* Game icon styling and layout */
-
-.choices {
+  .choices {
     margin-top: 50px;
     text-align: center;
   }
@@ -108,8 +98,7 @@ header>h1 {
   }
 
   /* Game rules layout and styling */
-
-.rules {
+  .rules {
     color: white;
     text-align: center;
     margin: 2em 10%;
@@ -121,8 +110,7 @@ header>h1 {
   }
   
   /* Footer element styling */
-  
-  footer {
+    footer {
     background-color: rgb(0, 0, 0, 0.5);
     position: fixed;
     bottom: 0%;
@@ -143,8 +131,7 @@ header>h1 {
   }
 
   /* media queries for responsive design on smaller screen sizes */
-
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .results {
       margin: auto 15%;
       font-size: 30px;
