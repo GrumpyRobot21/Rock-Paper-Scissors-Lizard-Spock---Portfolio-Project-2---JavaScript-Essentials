@@ -1,141 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The Rock, paper, scissors lizard, spock game"
-      />
-    <title>Rock Paper Scissors Lizard Spock Game</title>
 
-    <!-- Font-awesome link -->
-    <script
-      src="https://kit.fontawesome.com/6ae877c4cb.js"
-      crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Rock, paper, scissors lizard, spock game" />
+  <title>Rock Paper Scissors Lizard Spock Game</title>
 
-    <!-- link to css stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font-awesome link -->
+  <script src="https://kit.fontawesome.com/6ae877c4cb.js" crossorigin="anonymous"></script>
 
-    <!-- Google Fonts (Amatic SC) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
-      rel="stylesheet"
-      />
+  <!-- link to css stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <meta name="theme-color" content="rgb(47, 84, 206)" />
+  <!-- Google Fonts (Amatic SC) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
 
-    <!-- Favicon Links -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-touch-icon.png"
-      />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-      />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon-16x16.png"
-      />
-    <link rel="manifest" href="assets/images/site.webmanifest" />
-  </head>
-  <body>
-    <header>
-      <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
-    </header>
+  <meta name="theme-color" content="rgb(47, 84, 206)" />
 
-    <div class="scores">
-      <p>Scoreboard</p>
-      <div id="userback" class="player">
-        User: <span id="user-score">0</span>
-      </div>
-      <div id="compback" class="player">
-        Comp: <span id="computer-score">0</span>
-      </div>
+  <!-- Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+</head>
+
+<body>
+  <header>
+    <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
+  </header>
+
+  <!-- Game score board for both players. -->
+  <div class="scores">
+    <p>Scoreboard</p>
+    <div id="userback" class="player">
+      User: <span id="user-score">0</span>
     </div>
-
-    <div class="results">
-      <p class="score">Are you ready to play?! (Best of ten rounds.)</p>
+    <div id="compback" class="player">
+      Comp: <span id="computer-score">0</span>
     </div>
+  </div>
 
-    <div class="choices">
-      <div id="r" class="choice">
-        <img
-          src="assets/images/rock.webp"
-          alt="rock hand icon"
-          width="100"
-          height="100"
-          />
-      </div>
-      <div id="p" class="choice">
-        <img
-          src="assets/images/paper.webp"
-          alt="paper hand icon"
-          width="100"
-          height="100"
-          />
-      </div>
-      <div id="s" class="choice">
-        <img
-          src="assets/images/scissors.webp"
-          alt="scissors hand icon"
-          width="100"
-          height="100"
-          />
-      </div>
-      <div id="l" class="choice">
-        <img
-          src="assets/images/lizard.webp"
-          alt="lizard hand icon"
-          width="100"
-          height="100"
-          />
-      </div>
-      <div id="v" class="choice">
-        <img
-          src="assets/images/spock.webp"
-          alt="spock hand icon"
-          width="100"
-          height="100"
-          />
-      </div>
+  <!-- Text comparison of results and game announcements  -->
+  <div class="results">
+    <p class="score">Are you ready to play?! (Best of ten rounds.)</p>
+  </div>
+
+  <!-- Game icons for player choices -->
+  <div class="choices">
+    <div id="r" class="choice">
+      <img src="assets/images/rock.webp" alt="rock hand icon" width="100" height="100" />
     </div>
-    <div class="rules">
-      <p>
-        Click on the icon of your choice and see if you can beat the
-        computer.<br />The rules are: Scissors CUTS Paper! - Paper COVERS Rock!
-        - Rock CRUSHES Lizard! - Lizard POISONS Spock! - Spock SMASHES Scissors!
-        - Scissors DECAPITATES Lizard! - Lizard EATS Paper! - Paper DISPROVES
-        Spock! - Spock VAPOURISES Rock! - (and as it always has) Rock CRUSHES
-        Scissors! - Good Luck!!
-      </p>
+    <div id="p" class="choice">
+      <img src="assets/images/paper.webp" alt="paper hand icon" width="100" height="100" />
     </div>
+    <div id="s" class="choice">
+      <img src="assets/images/scissors.webp" alt="scissors hand icon" width="100" height="100" />
+    </div>
+    <div id="l" class="choice">
+      <img src="assets/images/lizard.webp" alt="lizard hand icon" width="100" height="100" />
+    </div>
+    <div id="v" class="choice">
+      <img src="assets/images/spock.webp" alt="spock hand icon" width="100" height="100" />
+    </div>
+  </div>
 
-    <footer>
-      <a
-        target="_blank"
-        href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock"
-        aria-label="Big bang theory fan wiki link"><i id="media1"
-          class="fa-brands fa-wikipedia-w"></i></a>
-      <a
-        target="_blank"
-        href="https://www.facebook.com/Rock-Paper-Scissors-Lizard-Spock-123077784372012/"
-        aria-label="Rock paper scissors lizard spock episode facebook page"><i
-          id="media2" class="fa-brands fa-facebook"></i></a>
-      <br />
-      <i class="fa-regular fa-copyright"> </i> 2022 Grumpyrobot
-    </footer>
+  <!-- Game rules and how to play -->
+  <div class="rules">
+    <p>
+      Click on the icon of your choice and see if you can beat the
+      computer.<br />The rules are: Scissors CUTS Paper! - Paper COVERS Rock!
+      - Rock CRUSHES Lizard! - Lizard POISONS Spock! - Spock SMASHES Scissors!
+      - Scissors DECAPITATES Lizard! - Lizard EATS Paper! - Paper DISPROVES
+      Spock! - Spock VAPOURISES Rock! - (and as it always has) Rock CRUSHES
+      Scissors! - Good Luck!!
+    </p>
+  </div>
+ 
+  <!-- Footer section with social media icons and copyright info -->
+  <footer>
+    <a target="_blank" href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock"
+      aria-label="Big bang theory fan wiki link"><i id="media1" class="fa-brands fa-wikipedia-w"></i></a>
+    <a target="_blank" href="https://www.facebook.com/Rock-Paper-Scissors-Lizard-Spock-123077784372012/"
+      aria-label="Rock paper scissors lizard spock episode facebook page"><i id="media2"
+        class="fa-brands fa-facebook"></i></a>
+    <br />
+    <i class="fa-regular fa-copyright"> </i> 2022 Grumpyrobot
+  </footer>
 
-    <!-- link to Javascript sheet-->
-    <script src="assets/js/script.js"></script>
-  </body>
+  <!-- link to Javascript sheet-->
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
