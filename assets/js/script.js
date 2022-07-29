@@ -1,4 +1,6 @@
-// caching the DOM and connecting HTML elements with variables for easier debugging.
+/**
+ * create game variables
+ */
 let userScore = 0
 let computerScore = 0
 const userScoreSpan = document.getElementById("user-score")
@@ -52,7 +54,7 @@ function win(userChoice, computerChoice) {
     // calls endGame function if user score is 10
     endgame();
   } else {
-    //displays numerical score results for user and computer
+    //displays numerical score results for user and computer and game continues
     userScoreSpan.innerHTML = userScore
     computerScoreSpan.innerHTML = computerScore
     resultsP.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(
@@ -83,7 +85,7 @@ function lose(userChoice, computerChoice) {
     // calls endGame function if computer score is 10
     endgame();
   } else {
-    //displays numerical score results for user and computer
+    //displays numerical score results for user and computer and game continues
     userScoreSpan.innerHTML = userScore
     computerScoreSpan.innerHTML = computerScore
     resultsP.innerHTML = `${convertToWord(
@@ -108,7 +110,6 @@ function endgame(win, lose) {
   if (computerScore === 10) {
     let element = document.querySelector(".score")
     element.style.backgroundColor = "red" // changes result output background-colour for lose scenario
-
     resultsP.innerHTML = `Bad luck, the computer won ${computerScore} rounds. You lost the game!!! (The Game will restart shortly. Have another go!).`
 
     // clears icon images from gameplay area
@@ -123,7 +124,6 @@ function endgame(win, lose) {
   } else if (userScore === 10) {
     let element = document.querySelector(".score")
     element.style.backgroundColor = "green" // changes result output background-colour for win scenario
-
     resultsP.innerHTML = `Well done, you won ${userScore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`
     
     // clears icon images from gameplay area
