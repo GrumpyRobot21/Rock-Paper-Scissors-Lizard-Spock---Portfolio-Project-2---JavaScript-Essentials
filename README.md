@@ -31,7 +31,7 @@ This web application has been developed in order to apply the topics covered wit
 
 The brief was to create an interactive application that presents users with an enjoyable game of chance. The principle features included are a game that employs a pattern matching functionality with a limited number of tries before the game is completed. The score must be tracked and it must provide the facility to play against 'the computer'. In addition a competitive element has been added with colourful and entertaining visual and audio cues to engage the users interest.
 
-p align="right"><a href="#home">Top of page</a></p><p id="df"></p>
+<p align="right"><a href="#home">Top of page</a></p><p id="df"></p>
 
 ## **DESIGN FEATURES.**
 
@@ -108,6 +108,8 @@ For the purposes of this story, our 'First time' user will be called 'Bob'. Bob 
 
 For the main page the wireframe preliminary layout design can be seen below. This was created using [Balsamiq](https://balsamiq.com/):
 
+![Rock Paper Scissors Lizard Spock](/assets/images/wireframe.png)
+
 ## **TESTING.**
 
 - ### **HTML Testing**
@@ -147,13 +149,13 @@ The following sites were used to test the web applications responsiveness: [Am I
 
 The [Wave Accessibilty testing tool](https://wave.webaim.org/) was used to check to test the page contrast and accessibilty of the application.
 
-The colour contrast was AAA rated.
+ - The colour contrast was AAA rated.
 
-![WebLife](/assets/images/contrast-test.png)
+![Rock Paper Scissors Lizard Spock](/assets/images/contrast-test.png)
 
 - ### **User Testing**
 
-Friends and family were the resource used to extensively test the usability of the web application. All page links and button functionality were tested including ascertaining that all social media links opened in separate tabs and that all action buttons and nav links were correctly configured and redirected the user to the correct page, as indicated.
+ - Friends and family were the resource used to extensively test the usability of the web application. All page links and button functionality were tested including ascertaining that all social media links opened in separate tabs and that all action buttons and nav links were correctly configured and redirected the user to the correct page, as indicated. The page was also subjected to the peer code review slack channel through Code Institute to bestringently put through it's paces.
 
 ---
 
@@ -163,7 +165,7 @@ Friends and family were the resource used to extensively test the usability of t
 
 The most recent iteration of the WebLife application has been deployed via Github pages. The following instructions clarify the process.
 
-1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [WebLife Digital Legacy Management](https://github.com/GrumpyRobot21/WebLife---Portfolio-Project-1---HTML-CSS-Essentials) (Hover over this link for the complete repository url)
+1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [Rock Paper Scissors Lizard Spock](https://github.com/GrumpyRobot21/Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials) (Hover over this link for the complete repository url)
 2. Click on the 'Settings' icon in the menu below the repository title.
 3. Click on the Pages option in the settings page menu on the left hand side of the screen.
 4. Click on the dropdown button "None" and select 'Master' or 'Main' Branch".
@@ -174,14 +176,14 @@ Should you wish to 'Fork' or 'Clone' the repository please follow these instruct
 - ### **Forking the Repository**
   Forking enables a third party to create a copy of the repository in order to view and/or make changes without affecting the original.
 
-1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [WebLife Digital Legacy Management](https://github.com/GrumpyRobot21/WebLife---Portfolio-Project-1---HTML-CSS-Essentials)
+1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [Rock Paper Scissors Lizard Spock](https://github.com/GrumpyRobot21/Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials)
 2. Towards the top right of the repository page, underneath the user icon you will find and click the "Fork" Button.
 3. You will now have successfully created a copy of the original repository within your GitHub account.
 
 - ### **Cloning the Repository**
   Follow these instructions to create a clone of the repository within your local development environment to make it easier to fix merge conflicts, add or remove files, and push larger commits.
 
-1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [WebLife Digital Legacy Management](https://github.com/GrumpyRobot21/WebLife---Portfolio-Project-1---HTML-CSS-Essentials)
+1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [Rock Paper Scissors Lizard Spock](https://github.com/GrumpyRobot21/Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials)
 2. Above the file list on the repository page locate and click the 'Code' button (beside the 'Add file' button)
 3. Copy the provided link depending on your desired option for either 'HTTPS', 'SSH key' or 'GitHub CLI.
 4. Open Git Bash and change the current working directory to the location where you want the cloned directory to be made.
@@ -191,18 +193,11 @@ Should you wish to 'Fork' or 'Clone' the repository please follow these instruct
 
 <p align="right"><a href="#home">Top of page</a></p><p id="pib"></p>
 
-## **PREVIOUS ITERATIONS AND BUGS.**
+## **BUGS.**
 
-The first iteration of this project was built without a proper uderstanding of the 'Mobile First' Developement concept. As a result it made it difficult to figure out the best approach to making the application responsive. Following engagement with Code Institute tutor support new concepts and ideas were discussed that helped resolve the decision to start again using some of the same design ideas but approaching the build from a new perspective. The end result was more responsive in its initial design from the ground up and as a result easier to complete than the first attempt.
+Apart from the usual spelling mistakes and formatting to tidy up, a number of bugs were identified during the testing phase and updated. This site was built from a responsive persepctive from the start (learned from project 1). The main bugs encountered were in the javascript. There was an issue when the sound files would not play when the game was completed. This was resolved by changing the relative path information to get the files to respond. Also, getting the win function to work took some slack help from the code institute channel to solve. Eventually calling the correct functions was the solution to resolving that bug.
 
-- ### **Bugs**
-  Apart from the usual spelling mistakes and formatting to tidy up, a number of bugs were identified during the testing phase and updated. These included but were not exclusively, having to add titles and aria labelling to the contact form to avoid the issue of not having specific labels **(The decision not to use labels in this instance was deliberate and in line with the specific design aspirations for the form layout.)**.
-
-Updating the main images from .png files to .webp format in order to reduce loading times and caching issues.
-
-Discovering redundant css styling while using the Chrome Developer tools but in the process understanding more about how these tools are extremely useful in the devlopment design and testing phase.
-
-There will undoubtedly be other issues that I am currently unaware of and styling changes that I will make as I gain additional knowledge during the remaining course modules. It has been a very enjoyable albeit sometimes incredibly frustrating process but ultimately extremely rewarding and fun.
+There will undoubtedly be other issues that I am currently unaware of that will be spotted by wiser heads. It has been a very erewarding process despite the very steep learning curve.
 
 ---
 
@@ -210,11 +205,7 @@ There will undoubtedly be other issues that I am currently unaware of and stylin
 
 ## **FUTURE ASPIRATIONS.**
 
-These include an online portal or client area to allow clients the access for online management of portflios held with WebLife. This would include a secure passord or biometrically protected client area where various levels of service and functionality would be offered. This would further facilitate the 'returning user' element of the site. A futher refining of the design will be part of the ongoing application development in future.
-
-Including the functionality for an emailed form submission clarification for users. The option for users to sign up for regular news and service updates.
-
-Discovering what Bootstrap is has been enlightening as it would obviously make the whole process a little quicker and easier. However, having to complete all the code personally means that during this process I have gained experience of simply writing code and not relying on a Framework to do the heavy lifting, although I will be taking advantage of this where I can in future.
+I would eventually like to keep a high score tally of multiple game winners with the number of games won in a row. This would provide additional incentive to keep playing.
 
 <p align="right"><a href="#home">Top of page</a></p><p id="tools"></p>
 
