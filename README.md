@@ -39,7 +39,7 @@ p align="right"><a href="#home">Top of page</a></p><p id="df"></p>
 
 <p align="center">
   <img src="assets/images/headerbar.png"?raw=true alt=" picture of the navigation bar"></p>
-This is a simple header displaying the title of the game. It is a clean and simlpe layout.
+This is a simple header displaying the title of the game. 
 
 - ### **Footer.**
 
@@ -58,34 +58,47 @@ The footer has been designed to be informative and simple in it's presentation. 
 
 Below the navbar is the main game play area. This has the scoreboard clearly defined at the top of the page and the player feedback section immediately below. The game icons are laid out beneath that and they are aniimated to clearly show the user which one they are engaging with. The rules and how to play the game are in the box below giving the user clear instructions on how to play.
 
-- ### **Colour Palette.**
-  The colour palette is purposefully simple and clean. It consists almost entirely of the two following colours: #1e5c71 and White.
-  <p align="center">
-    <img src="assets/images/white.png"?raw=true alt=" sample of the blue shade used in the site design"></p>
-   <p align="center">
-    <img src="assets/images/designcolor.png"?raw=true alt=" sample of the blue shade used in the site design"></p>
+There are two altrnatives to this screen when the game is either won or lost. The dialogue boxes are coloured appropriately depending on the scenario and the text is either celebratory or comiseratory.
 
-These two colors provide a high level of contrast for users with impaired vison, as confirmed in the testing section below. They also add to the overall goal of creating a clear, professional and efficient design ethos. The colors were chosen in conjunction with the main logo to present a smooth, related connection across the application. This helps provide consistency to the overall aesthetic flow of the user experience.
+- ## WIN **SCREEN**
+
+<p align="center">
+ <img src="assets/images/screenshot-win.png"?raw=true alt="image of the home page"></p>
+ <p align="center">
+
+ - ## **LOSE SCREEN**
+
+<p align="center">
+ <img src="assets/images/screenshot-lose.png"?raw=true alt="image of the home page"></p>
+ <p align="center">
+
+- ## **COLOUR PALETTE.**
+  The colour palette is purposefully simple and clean. It consists of the following six colour choices: 
+
+  <p align="center">
+    <img src="assets/images/color-palette.png"?raw=true alt=" sample of the blue shade used in the site design"></p>
+ 
+
+These colours provide a high level of contrast for users with impaired vison, as confirmed in the testing section below. They also add to the overall goal of creating a clear, engaging and fun design ethos. The colors were chosen in conjunction with the background image to present a smooth, related connection across the application. This helps provide consistency to the overall aesthetic flow of the user experience.
 
 - ### **Font.**
-  The chosen font is a geometric sans serif typeface named Poppins. This is a modern and clean font that is easy and clear to interpret as well as adding to the modern design ethos of the site. This is the official font description courtesy of the google fonts page "Geometric sans serif typefaces have been a popular design tool ever since these actors took to the world’s stage. Poppins is one of the new comers to this long tradition. With support for the Devanagari and Latin writing systems, it is an internationalist take on the genre."
-
+  The font used for the page is Amatic SC. It is a simple but effective hand drawn webfont. It was initially designed by Vernon Adams, and concieved of to be used freely across the internet. It features both Latin and Hebrew alphabets. The Latin was initially designed by Vernon Adams. The Hebrew was designed by Ben Nathan, who also revised the Latin design. Thomas Jockin respaced and kerned the whole font.
 ---
 
 <p align="right"><a href="#home">Top of page</a></p><p id="us"></p>
 
 ## **USER STORY.**
 
-For the purposes of this story, our 'First time' user will be called 'Bob'. Bob is a young professional who has a great number of online profiles and accounts across many platforms. Like most of Bob's generation, Bob does a lot of things online for recreational, personal and business purposes.
+For the purposes of this story, our 'First time' user will be called 'Bob'. Bob likes playing games of chance.
 
-- Bob has looked up the site because he wants to learn more about the importance of managing his online digital legacy and he is aware that he has a growing portfolio of online data and assets to keep under control. He lands on the home page and is immediately struck by the hero banner quote. This piques his interest and he continues to read down the page where he learns a little about the company and what it does for potential clients. On reaching the bottom of the page Bob sees the prominent button to learn more. The social media icons are also clear and on display so Bob can easily subscribe to his preferred platforms and follow the WebLife media pages to be kept up to date on the latest news and developments. Bob clicks on the button to learn more. PAGE AIM: To capture the users interest while presenting the user with clear and concise navigation choices and clearly defined social media links.
+- Bob has looked up the site because he wants to have a go at beating the computer playing the famous game from the tv show 'Big Bang Theory'. Bob has navigated to the home page and is immediately presented with a clean and clear, easy to understand game interface. Bob reads the game play instructions and starts clicking on his chosen game icons. When Bob wins a game of ten rounds he gets a cheery and uplifting text box congratulating him on his win accompanied by a brief winning sound. This encourages Bob to play agin.
 
-- Bob is now on the ABOUT US page. This page elaborates on the initial information encountered previously. Here Bob is now more aware of the issues faced by modern internet users and how there is a need to be more in control of their online assets. Bob is now intrigued, curious and genuinely interested in a no strings attached free consultation with an expert. Bob clicks on the prominent action button at the foot of the page to move deeper into the application. PAGE AIM: To provide more detailed information and drive a users curiosity with the perception of an issue that needs to be dealt with. The ultimate goal is to drive traffic to the CONTACT US page and get the user to engage positively by submitting the completed form.
+- When Bob loses a game of ten rounds he is presented with a comiseratory text box accompanied by a losing sound and encouraged to play again to see if he can win.
 
-- Bob has now been taken to the CONTACT US submission form. He is unable to submit it until he has fully completed all of the fields. This is clearly indicated in a concise and helpful manner. Bob easily fills out the prerequisite information and submits the form. He is immediately informed that his message has been received and that an expert will be in touch within 24 hours. This pleases Bob and, as Bob is interested in keeping up with relevant news, he signs up to his preferred choice of social media accounts via the icons at the bottom of the page. PAGE AIM: To compel the user to complete the form and engage with the company directly. With the user filling in the form and submitting it the web application will have succeeded in it's primary purpose.
+- Each time a game is won or lost the game automatically resets after a brief pause.
 
 * ### **Returning Users.**
-  This site in its current form is designed specifically to generate new customer leads and drive traffic to the contact page where they engage directly with the company. As a result it is not yet fully developed for returning users. This functionality will be addressed in the 'Future Aspirations' section below.
+  The game is designed to be simple and fun in order to encourage users to come back and try their luck as many times as they want.
 
 ---
 
@@ -93,63 +106,21 @@ For the purposes of this story, our 'First time' user will be called 'Bob'. Bob 
 
 ## **WIREFRAMES.**
 
-For the three main pages the wireframe preliminary layout design can be seen below. These were created using the wireframe tool [Balsamiq](https://balsamiq.com/):
-
-- ### **Home**
-
-<p align="center">
-  <img src="assets/images/WL_Home.png"?raw=true alt="wireframe design for home page"></p>
-
-- ### **About**
-
-<p align="center">
-  <img src="assets/images/WL_About.png"?raw=true alt="wireframe design for home page"></p>
-
-- ### **Contact**
-<p align="center">
-  <img src="assets/images/WL_Contact.png"?raw=true alt="wireframe design for home page"></p>
-
----
-
-<p align="right"><a href="#home">Top of page</a></p><p id="test"></p>
+For the main page the wireframe preliminary layout design can be seen below. This was created using [Balsamiq](https://balsamiq.com/):
 
 ## **TESTING.**
 
 - ### **HTML Testing**
-  The following test results were achieved for the individual pages (index.html, about.html, contact.html & thankyou.html) using the [W3C Markup Validation Service](https://validator.w3.org/)
-- index.html
+  The following test results were achieved for the page using the [W3C Markup Validation Service](https://validator.w3.org/)
 
-![WebLife](/assets/images/W3CMUHome.png)
+![Rock Paper Scissors Lizard Spock](/assets/images/htmltest.png)
 
-- about.html
-
-![WebLife](/assets/images/W3CMUAbout.png)
-
-- contact.html
-
-![WebLife](/assets/images/W3CMUContact.png)
-
-- thankyou.html
-
-![WebLife](/assets/images/W3CMUThankyou.png)
 
 - ### **CSS Testing**
-  The following test results were achieved for the individual pages (index.html, about.html, contact.html & thankyou.html) using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+  The following test results were achieved for the page using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - index.html
 
-![WebLife](/assets/images/CSScheckHome.png)
-
-- about.html
-
-![WebLife](/assets/images/CSScheckAbout.png)
-
-- contact.html
-
-![WebLife](/assets/images/CSScheckContact.png)
-
-- thankyou.html
-
-![WebLife](/assets/images/CSScheckThankyou.png)
+![Rock Paper Scissors Lizard Spock](/assets/images/csstest.png)
 
 - ### **Chrome Dev Tools - Lighthouse - Testing**
   The Chrome dev tool - Lighthouse - Tests the overall performance, Accessibility, Web Development best practices and SEO. The following results were confirmed:
