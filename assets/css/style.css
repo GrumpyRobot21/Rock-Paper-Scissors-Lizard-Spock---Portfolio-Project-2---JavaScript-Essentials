@@ -125,6 +125,15 @@ header>h1 {
     color: white;
   }
 
+  #media1:hover {
+    transform: scale(1.25);
+  }
+  
+  #media2:hover {
+    transform: scale(1.25);
+  }
+
+
   /* media queries for responsive design on smaller screen sizes */
   @media screen and (max-width: 600px) {
     .results {
