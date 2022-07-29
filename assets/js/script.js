@@ -17,8 +17,8 @@ const spockD = document.getElementById("v")
  */
 function getcompChoice() {
   let choices = ["r", "p", "s", "l", "v"]
-  let randomNumber = Math.floor(Math.random() * 5)
-  return choices[randomNumber]
+  let randomNum = Math.floor(Math.random() * 5)
+  return choices[randomNum]
 }
 
 /**
@@ -36,7 +36,7 @@ function changeToWord(letter) {
  * Declares win for user when computer loses and amends user score total
  */
 function win(uchoice, compChoice) {
-  uscore++;
+  uscore++
   // Briefly changes background color of user score div to indicate the win
   function changeCol() {
     document.getElementById("userback").style.background = "#1adbf4"
