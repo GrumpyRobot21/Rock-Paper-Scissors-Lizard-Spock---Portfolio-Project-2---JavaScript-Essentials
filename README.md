@@ -1,9 +1,9 @@
-# **[Rock - Paper -Scissors - Lizard - Spock](https:///)**
+# **[Rock - Paper -Scissors - Lizard - Spock](https://grumpyrobot21.github.io/Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials/)**
 
 ## **Milestone Portfolio Project 2 - JavaScript Essentials - Code Institute Full Stack Developer Diploma.**
 
 <p align="center">
-  <img src="assets/images/RPSLS -Screenshot.png"?raw=true alt="responsive web design"></p>
+  <img src="assets/images/responsivescreen.png"?raw=true alt="responsive web design"></p>
   <p id="home"></p>
 
 ## Table of contents
@@ -23,7 +23,7 @@
 
 ## **INTRODUCTION.**
 
-This web application has been developed in order to apply the topics covered within the recent Javascript essential course work as part of the Code Institute Full Stack Software Developer diploma. The website represents a simple Rock Paper Scissors Lizard Spock game based on the idea presented in the popular TV series, 'The Big Bang Theory'. The game pits the user against the computer in a game of chance. To view the full website please use the clickable link via the heading at the top of this page or alternatively, click on the following link to access the site: [Rock Paper Scissors Lizard Spock](https:///)
+This web application has been developed in order to apply the topics covered within the recent Javascript essential course work as part of the Code Institute Full Stack Software Developer diploma. The website represents a Rock Paper Scissors Lizard Spock game based on the idea presented in the popular TV series, 'The Big Bang Theory'. The game pits the user against the computer in a game of chance. To view the full website please use the clickable link via the heading at the top of this page or alternatively, click on the following link to access the site: [Rock Paper Scissors Lizard Spock](https://grumpyrobot21.github.io/Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials/)
 
 <p align="right"><a href="#home">Top of page</a></p><p id="dg"></p>
 
