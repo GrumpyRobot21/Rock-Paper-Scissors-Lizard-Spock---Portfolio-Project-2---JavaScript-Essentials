@@ -3,8 +3,8 @@
  */
 let uscore = 0
 let comScore = 0
-const uScoreS = document.getElementById("user-score")
-const compScoreS = document.getElementById("computer-score")
+const uScoreS = document.getElementById("user")
+const compScoreS = document.getElementById("computer")
 const resultsP = document.querySelector(".score")
 const rockD = document.getElementById("r")
 const paperD = document.getElementById("p")
