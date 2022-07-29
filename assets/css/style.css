@@ -9,7 +9,7 @@
 
 /* sets background image and font style */
 body {
-    background: url("/assets/images/mountains.webp");
+    background: url("../images/mountains.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
