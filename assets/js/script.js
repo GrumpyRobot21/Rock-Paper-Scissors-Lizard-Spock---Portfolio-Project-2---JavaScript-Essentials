@@ -118,7 +118,7 @@ function endgame(win, lose) {
 
     //plays short audio file to signify game lost
     let loseSound = new Audio(
-      "../audio/loseSound.wav"
+      "assets/audio/loseSound.wav"
     )
     loseSound.play();
   } else if (userScore === 10) {
@@ -132,7 +132,7 @@ function endgame(win, lose) {
 
     //plays short audio file to signify game won
     let winSound = new Audio(
-      "../audio/winSound.wav"
+      "assets/audio/winSound.wav"
     )
     winSound.play();
   }
