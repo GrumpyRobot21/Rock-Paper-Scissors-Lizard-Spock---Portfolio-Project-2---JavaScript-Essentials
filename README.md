@@ -56,27 +56,27 @@ The footer has been designed to be informative and simple in it's presentation. 
  <img src="assets/images/screenshot.png"?raw=true alt="image of the home page"></p>
  <p align="center">
 
-Below the navbar is the main game play area. This has the scoreboard clearly defined at the top of the page and the player feedback section immediately below. The game icons are laid out beneath that and they are aniimated to clearly show the user which one they are engaging with. The rules and how to play the game are in the box below giving the user clear instructions on how to play.
+Below the navbar is the main game play area. This has the scoreboard clearly defined at the top of the page and the player feedback section immediately below. The game icons are laid out beneath that and they are animated to clearly show the user which one they are engaging with. The rules and how to play the game are in the box below giving the user clear instructions on how to play.
 
 There are two altrnatives to this screen when the game is either won or lost. The dialogue boxes are coloured appropriately depending on the scenario and the text is either celebratory or comiseratory.
 
 - ## WIN **SCREEN**
 
 <p align="center">
- <img src="assets/images/screenshot-win.png"?raw=true alt="image of the home page"></p>
+ <img src="assets/images/screenshot-win.png"?raw=true alt="image of the game win screen"></p>
  <p align="center">
 
  - ## **LOSE SCREEN**
 
 <p align="center">
- <img src="assets/images/screenshot-lose.png"?raw=true alt="image of the home page"></p>
+ <img src="assets/images/screenshot-lose.png"?raw=true alt="image of the  lose screen"></p>
  <p align="center">
 
 - ## **COLOUR PALETTE.**
   The colour palette is purposefully simple and clean. It consists of the following six colour choices: 
 
   <p align="center">
-    <img src="assets/images/color-palette.png"?raw=true alt=" sample of the blue shade used in the site design"></p>
+    <img src="assets/images/color-palette.png"?raw=true alt=" sample of the colour palette used in the site design"></p>
  
 
 These colours provide a high level of contrast for users with impaired vison, as confirmed in the testing section below. They also add to the overall goal of creating a clear, engaging and fun design ethos. The colors were chosen in conjunction with the background image to present a smooth, related connection across the application. This helps provide consistency to the overall aesthetic flow of the user experience.
@@ -108,26 +108,31 @@ For the purposes of this story, our 'First time' user will be called 'Bob'. Bob 
 
 For the main page the wireframe preliminary layout design can be seen below. This was created using [Balsamiq](https://balsamiq.com/):
 
-![Rock Paper Scissors Lizard Spock](/assets/images/wireframe.png)
+<p align="center">
+    <img src="assets/images/wireframe.png"?raw=true alt=" wireframe design prototype used for the site design"></p>
+
 
 ## **TESTING.**
 
 - ### **HTML Testing**
   The following test results were achieved for the page using the [W3C Markup Validation Service](https://validator.w3.org/)
 
-![Rock Paper Scissors Lizard Spock](/assets/images/htmltest.png)
+<p align="center">
+    <img src="assets/images/htmltest.png"?raw=true alt=" HTML testing results"></p>
 
 
 - ### **CSS Testing**
   The following test results were achieved for the page using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - index.html
 
-![Rock Paper Scissors Lizard Spock](/assets/images/csstest.png)
+<p align="center">
+    <img src="assets/images/csstest.png"?raw=true alt=" CSS testing results"></p>
 
 - ### **Chrome Dev Tools - Lighthouse - Testing**
   The Chrome dev tool - Lighthouse - Tests the overall performance, Accessibility, Web Development best practices and SEO. The following results were confirmed:
 
-![WebLife](/assets/images/lighthouse-test-result.png)
+<p align="center">
+    <img src="assets/images/lighthouse-test.webp"?raw=true alt=" Chrome dev tools lighthouse testing results"></p>
 
 - ### **Responsiveness Testing**
 
@@ -151,7 +156,8 @@ The [Wave Accessibilty testing tool](https://wave.webaim.org/) was used to check
 
  - The colour contrast was AAA rated.
 
-![Rock Paper Scissors Lizard Spock](/assets/images/contrast-test.png)
+<p align="center">
+    <img src="assets/images/contrast-test.png"?raw=true alt=" Wave accesibility tool testing results"></p>
 
 - ### **User Testing**
 
@@ -205,7 +211,7 @@ There will undoubtedly be other issues that I am currently unaware of that will 
 
 ## **FUTURE ASPIRATIONS.**
 
-I would eventually like to keep a high score tally of multiple game winners with the number of games won in a row. This would provide additional incentive to keep playing.
+I would eventually like to keep a high score tally of multiple game winners with the number of games won in a row. This would provide additional incentive for users to keep playing.
 
 <p align="right"><a href="#home">Top of page</a></p><p id="tools"></p>
 
@@ -218,6 +224,7 @@ The following tools, pages and tutorials were invaluable in helping me complete 
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 - [GitPod](https://www.gitpod.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [freeCodeCamp. Javascript tutorial assistance](https://www.freecodecamp.org/)
 - [GitHub](https://github.com/)
 - [Google Fonts. Amatic SC font.](https://fonts.google.com/specimen/Amatic+SC?query=Amatic+)
 - [Font Awesome Icons. Social media Icons.](https://fontawesome.com/)
@@ -225,6 +232,7 @@ The following tools, pages and tutorials were invaluable in helping me complete 
 - [Neon text animation effects](https://codepen.io/markheggan/pen/LjrVYN)
 - [How to remove an element from the DOM using Javascript](https://www.w3schools.com/jsref/met_element_remove.asp)
 - [Real Favicon Generator. Favicon design for cross platform functionality.](https://realfavicongenerator.net/)
+- [Red Ketchup. Online image resizing tool](https://redketchup.io/image-resizer)
 - [Chrome Developer Tools. Application testing.](https://developer.chrome.com/docs/devtools/)
 - [W3C Markup Validation Service. HTML testing.](https://validator.w3.org/)
 - [W3C CSS Validation Service. CSS testing.](https://jigsaw.w3.org/css-validator/)
