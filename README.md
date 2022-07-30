@@ -167,7 +167,7 @@ The colour contrast was AAA rated.
 
 - ### **JavaScript Testing**
 
-[JS Hint](https://jshint.com/) was used to check the quality and functionality of the JavaScript code. No major issues were flagged and the rest of the feedback was directed at syntax tidying up to make the code cleaner. 
+[JS Hint](https://jshint.com/) was used to check the quality and functionality of the JavaScript code. No significant issues were recorded and the rest of the feedback was directed at tidying up the syntax. 
 
 - ### **User Testing**
 
