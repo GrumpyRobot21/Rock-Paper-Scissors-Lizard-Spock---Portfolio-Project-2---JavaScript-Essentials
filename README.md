@@ -52,7 +52,7 @@ The footer has been designed to be informative and simple in it's presentation. 
 - ### **Page Design.**
   The single page design has been specifically created to portray a clean, fun and engaging experience for the user. The page content presented in a clear and accessible fashion for the user to understand.
 
-1.  #### **Main Page.**
+-  #### **Main Page.**
 
 <p align="center">
  <img src="assets/images/screenshot.png"?raw=true alt="image of the home page"></p>
@@ -113,6 +113,7 @@ For the main page the wireframe preliminary layout design can be seen below. Thi
 <p align="center">
     <img src="assets/images/wireframe.png"?raw=true alt=" wireframe design prototype used for the site design"></p>
 
+<p align="right"><a href="#home">Top of page</a></p><p id="test"></p>
 
 ## **TESTING.**
 
@@ -128,7 +129,6 @@ For the main page the wireframe preliminary layout design can be seen below. Thi
 - ### **CSS Testing**
 
   The following test results were achieved for the page using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- index.html
 
 <p align="center">
     <img src="assets/images/csstest.png"?raw=true alt=" CSS testing results"></p>
@@ -144,7 +144,7 @@ For the main page the wireframe preliminary layout design can be seen below. Thi
 
 The following sites were used to test the web applications responsiveness: [Am I Responsive](https://ui.dev/amiresponsive) and [Media Genesis Responsive Design Checker](https://responsivedesignchecker.com/)
 
-- The 'Am I responsive generator' result image has been used at the start of this readme file. Please see the image at the top for the results. This page focuses on the following image viewport sizes -
+The 'Am I responsive generator' result image has been used at the start of this readme file. Please see the image at the top for the results. This page focuses on the following image viewport sizes -
   Desktop
   1600x992px scaled down to scale(0.3181)
   Laptop
@@ -154,20 +154,24 @@ The following sites were used to test the web applications responsiveness: [Am I
   Mobile
   320x480px scaled down to scale(0.219). The site results indicate good performance on all viewport sizes.
 
-- The Media Genesis page gives the option to test the page on several different viewport screen sizes from Desktop 24 inch 1920 x 1200px resolution all the way down to the mobile viewport size of 320 x 480px. The site performed very well on all viewport size options.
+The Media Genesis page gives the option to test the page on several different viewport screen sizes from Desktop 24 inch 1920 x 1200px resolution all the way down to the mobile viewport size of 320 x 480px. The site performed very well on all viewport size options.
 
 - ### **Contrast/ Accessibility Testing**
 
 The [Wave Accessibilty testing tool](https://wave.webaim.org/) was used to check to test the page contrast and accessibilty of the application.
 
- - The colour contrast was AAA rated.
+The colour contrast was AAA rated.
 
 <p align="center">
     <img src="assets/images/contrast-test.png"?raw=true alt=" Wave accesibility tool testing results"></p>
 
+- ### **JavaScript Testing**
+
+[JS Hint](https://jshint.com/) was used to check the quality and functionality of the JavaScript code. No major issues were flagged and the rest of the feedback was directed at syntax tidying up to make the code cleaner. 
+
 - ### **User Testing**
 
- - Friends and family were the resource used to extensively test the usability of the web application. All page links and button functionality were tested including ascertaining that all social media links opened in separate tabs and that all icon play buttons were correctly configured and provided the correct feedback to the user, as indicated. The page was also subjected to the peer code review slack channel through Code Institute to be stringently put through it's paces.
+Friends and family were the resource used to extensively test the usability of the web application. All page links and button functionality were tested including ascertaining that all social media links opened in separate tabs and that all icon play buttons were correctly configured and provided the correct feedback to the user, as indicated. The page was also subjected to the peer code review slack channel through Code Institute to be stringently put through it's paces.
 
 ---
 
@@ -242,6 +246,7 @@ The following tools, pages and tutorials were invaluable in helping me complete 
 - [Chrome Developer Tools. Application testing.](https://developer.chrome.com/docs/devtools/)
 - [W3C Markup Validation Service. HTML testing.](https://validator.w3.org/)
 - [W3C CSS Validation Service. CSS testing.](https://jigsaw.w3.org/css-validator/)
+- [JS Hint testing JavaScript code](https://jshint.com/)
 - [Am I Responsive. Responsiveness testing.](https://ui.dev/amiresponsive)
 - [Media Genesis Responsive Design Checker. Responsiveness testing.](https://responsivedesignchecker.com/)
 - [Wave Accessibilty testing tool. Accessibility and Contrast testing.](https://wave.webaim.org/)
