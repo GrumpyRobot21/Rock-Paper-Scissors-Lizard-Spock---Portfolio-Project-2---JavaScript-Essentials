@@ -24,7 +24,7 @@ function getcompChoice() {
 /**
  * converts user and computer choices into text for results display
  */
-function changeToWord(letter) {
+function changeToText(letter) {
   if (letter === "r") return "Rock"
   if (letter === "p") return "Paper"
   if (letter === "s") return "Scissors"
@@ -53,12 +53,12 @@ function win(uchoice, compChoice) {
 
   if (uscore === 10) {
     // calls endGame function if user score is 10
-    endgame();
+    endGame();
   } else {
     //displays numerical score results for user and computer and game continues
     uScoreS.innerHTML = uscore
     compScoreS.innerHTML = comScore
-    resultsP.innerHTML = `${changeToWord(uchoice)} beats ${changeToWord(
+    resultsP.innerHTML = `${changeToText(uchoice)} beats ${changeToText(
       compChoice
     )}. You Win!!!`;
   }
@@ -85,14 +85,14 @@ function lose(uchoice, compChoice) {
 
   if (comScore === 10) {
     // calls endGame function if computer score is 10
-    endgame();
+    endGame();
   } else {
     //displays numerical score results for user and computer and game continues
     uScoreS.innerHTML = uscore
     compScoreS.innerHTML = comScore
-    resultsP.innerHTML = `${changeToWord(
+    resultsP.innerHTML = `${changeToText(
       uchoice
-    )} loses to ${changeToWord(compChoice)}. You Lost...`;
+    )} loses to ${changeToText(compChoice)}. You Lost...`;
   }
 }
 
@@ -100,7 +100,7 @@ function lose(uchoice, compChoice) {
  * Declares a draw if user and computer make same choice
  */
 function draw(uchoice, compChoice) {
-  resultsP.innerHTML = `${changeToWord(uchoice)} equals ${changeToWord(
+  resultsP.innerHTML = `${changeToText(uchoice)} equals ${changeToText(
     compChoice
   )}. It's a Draw!!`
 }
@@ -108,7 +108,7 @@ function draw(uchoice, compChoice) {
 /**
  * Declares winner after 10 rounds then resets game.
  */
-function endgame(win, lose) {
+function endGame(win, lose) {
   if (comScore === 10) {
     let element = document.querySelector(".score")
     element.style.backgroundColor = "red" // changes result output background-colour for lose scenario
@@ -127,7 +127,7 @@ function endgame(win, lose) {
     let element = document.querySelector(".score")
     element.style.backgroundColor = "green" // changes result output background-colour for win scenario
     resultsP.innerHTML = `Well done, you won ${uscore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`
-    
+
     // clears icon images from gameplay area
     let clear = document.querySelector(".choices")
     clear.remove()
