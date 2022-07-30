@@ -1,4 +1,4 @@
-/* set page style */
+/* set page and font style */
 * {
     cursor: pointer;
     margin: 0;
@@ -7,7 +7,7 @@
     font-family: "Amatic SC", cursive, sans-serif;
 }
 
-/* sets background image and font style */
+/* sets background image */
 body {
     background: url("../images/mountains.webp");
     background-repeat: no-repeat;
@@ -125,13 +125,13 @@ header>h1 {
     color: white;
   }
 
-  #media1:hover {
+  #media1:hover, #media2:hover{
     transform: scale(1.25);
   }
   
-  #media2:hover {
+  /* #media2:hover {
     transform: scale(1.25);
-  }
+  } */
 
 
   /* media queries for responsive design on smaller screen sizes */
