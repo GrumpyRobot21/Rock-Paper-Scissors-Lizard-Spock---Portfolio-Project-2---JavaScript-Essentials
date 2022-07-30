@@ -39,6 +39,7 @@ The brief was to create an interactive application that presents users with an e
 
 <p align="center">
   <img src="assets/images/headerbar.png"?raw=true alt=" picture of the navigation bar"></p>
+
 This is a simple header displaying the title of the game. 
 
 - ### **Footer.**
@@ -46,6 +47,7 @@ This is a simple header displaying the title of the game.
 <p align="center">
   <img src="assets/images/footer.png"?raw=true alt=" picture of the header bar"></p>
 The footer has been designed to be informative and simple in it's presentation. It should not detract from the main page content yet provide relevant and helpful information for the user to engage with when required. The links to social media icons are clearly displayed. The icons are animated when the cursor is hovered above to clearly indicate which icon is being engaged by the user. Each link opens the relevant page in a separate tab. 
+
 
 - ### **Page Design.**
   The single page design has been specifically created to portray a clean, fun and engaging experience for the user. The page content presented in a clear and accessible fashion for the user to understand.
@@ -60,7 +62,7 @@ Below the navbar is the main game play area. This has the scoreboard clearly def
 
 There are two altrnatives to this screen when the game is either won or lost. The dialogue boxes are coloured appropriately depending on the scenario and the text is either celebratory or comiseratory.
 
-- ## WIN **SCREEN**
+- ## **WIN SCREEN**
 
 <p align="center">
  <img src="assets/images/screenshot-win.png"?raw=true alt="image of the game win screen"></p>
@@ -91,7 +93,7 @@ These colours provide a high level of contrast for users with impaired vison, as
 
 For the purposes of this story, our 'First time' user will be called 'Bob'. Bob likes playing games of chance.
 
-- Bob has looked up the site because he wants to have a go at beating the computer playing the famous game from the tv show 'Big Bang Theory'. Bob has navigated to the home page and is immediately presented with a clean and clear, easy to understand game interface. Bob reads the game play instructions and starts clicking on his chosen game icons. When Bob wins a game of ten rounds he gets a cheery and uplifting text box congratulating him on his win accompanied by a brief winning sound. This encourages Bob to play agin.
+- Bob has looked up the site because he wants to have a go at beating the computer playing the famous game from the tv show 'Big Bang Theory'. Bob has navigated to the home page and is immediately presented with a clean and clear, easy to understand game interface. Bob reads the game play instructions and starts clicking on his chosen game icons. When Bob wins a game of ten rounds he gets a cheery and uplifting text box congratulating him on his win accompanied by a brief winning sound. This encourages Bob to play again.
 
 - When Bob loses a game of ten rounds he is presented with a comiseratory text box accompanied by a losing sound and encouraged to play again to see if he can win.
 
@@ -115,13 +117,16 @@ For the main page the wireframe preliminary layout design can be seen below. Thi
 ## **TESTING.**
 
 - ### **HTML Testing**
+
   The following test results were achieved for the page using the [W3C Markup Validation Service](https://validator.w3.org/)
+
 
 <p align="center">
     <img src="assets/images/htmltest.png"?raw=true alt=" HTML testing results"></p>
 
 
 - ### **CSS Testing**
+
   The following test results were achieved for the page using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - index.html
 
@@ -129,6 +134,7 @@ For the main page the wireframe preliminary layout design can be seen below. Thi
     <img src="assets/images/csstest.png"?raw=true alt=" CSS testing results"></p>
 
 - ### **Chrome Dev Tools - Lighthouse - Testing**
+
   The Chrome dev tool - Lighthouse - Tests the overall performance, Accessibility, Web Development best practices and SEO. The following results were confirmed:
 
 <p align="center">
@@ -161,7 +167,7 @@ The [Wave Accessibilty testing tool](https://wave.webaim.org/) was used to check
 
 - ### **User Testing**
 
- - Friends and family were the resource used to extensively test the usability of the web application. All page links and button functionality were tested including ascertaining that all social media links opened in separate tabs and that all action buttons and nav links were correctly configured and redirected the user to the correct page, as indicated. The page was also subjected to the peer code review slack channel through Code Institute to bestringently put through it's paces.
+ - Friends and family were the resource used to extensively test the usability of the web application. All page links and button functionality were tested including ascertaining that all social media links opened in separate tabs and that all icon play buttons were correctly configured and provided the correct feedback to the user, as indicated. The page was also subjected to the peer code review slack channel through Code Institute to be stringently put through it's paces.
 
 ---
 
