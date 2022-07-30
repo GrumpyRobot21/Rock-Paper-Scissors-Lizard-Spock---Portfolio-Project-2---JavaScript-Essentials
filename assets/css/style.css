@@ -121,18 +121,99 @@ footer {
 /* Footer media icon styling and animation */
 
 #media1,
-#media2 {
+#media2,
+#media3 {
   padding-left: 1em;
   padding-right: 1em;
   color: white;
 }
 
 #media1:hover,
-#media2:hover {
+#media2:hover,
+#media3:hover {
   transform: scale(1.25);
 }
 
+/* contact page styling */
+
+.form-info,
+#formhead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-right: .5em;
+}
+
+.form-content {
+  margin: 2rem auto;
+  border: 3px solid white;
+  border-radius: 8px;
+  padding: 15px;
+  width: 50%;
+  color: white;
+  font-size: 25px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+.form-style input {
+  padding: 15px;
+  margin: 10px;
+  width: 100%;
+  color: #2f54ce;
+  border: 3px solid #1adbf4;
+  border-radius: 8px;
+}
+
+.form-style input::placeholder {
+  color: #2f54ce;
+  font-size: 25px;
+}
+
+textarea {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  color: #2f54ce;
+  border: none;
+  border: 3px solid #1adbf4;
+  border-radius: 8px;
+}
+
+textarea::placeholder {
+  color: #2f54ce;
+  font-size: 25px;
+}
+
+/* Contact page action button */
+
+#away-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send {
+  background: rgb(47, 84, 206);
+  border: 3px solid white;
+  border-radius: 8px;
+  font-size: 40px;
+  padding: 2px 10px;
+  margin: 20px 0;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.send:hover {
+  background-color: white;
+  color: #2f54ce;
+  border: 3px solid #1adbf4;
+  box-shadow: inset 100px 0 0 0 white;
+}
+
 /* media queries for responsive design on smaller screen sizes */
+
 @media screen and (max-width: 600px) {
   .results {
     margin: auto 15%;
@@ -156,5 +237,20 @@ footer {
 
   footer {
     background-color: rgb(0, 0, 0);
+  }
+
+  .form-content {
+    margin: 1rem auto;
+    padding: 15px;
+    width: 80%;
+  }
+
+  .form-style input {
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    color: #2f54ce;
+    border: 3px solid #1adbf4;
+    border-radius: 8px;
   }
 }
