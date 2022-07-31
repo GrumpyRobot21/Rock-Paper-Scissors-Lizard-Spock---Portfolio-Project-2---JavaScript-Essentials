@@ -29,7 +29,7 @@ This web application has been developed in order to apply the topics covered wit
 
 ## **DESIGN GOALS.**
 
-The brief was to create an interactive application that presents users with an enjoyable game of chance. The principle features included are a game that employs a pattern matching functionality with a limited number of tries before the game is completed. The score must be tracked and it must provide the facility to play against 'the computer'. In addition a competitive element has been added with colourful and entertaining visual and audio cues to engage the users interest.
+The brief was to create an interactive application that presents users with an enjoyable game of chance. The principle features included are a game that employs a pattern matching functionality with a limited number of tries before the game is completed. The score must be tracked and it must provide the facility to play against 'the computer'. In addition a competitive element has been added with colourful and entertaining visual and audio cues to engage the users interest. There is also a contact page for users to submit suggestions or feedback.
 
 <p align="right"><a href="#home">Top of page</a></p><p id="df"></p>
 
@@ -50,7 +50,7 @@ The footer has been designed to be informative and simple in it's presentation. 
 
 
 - ### **Page Design.**
-  The single page design has been specifically created to portray a clean, fun and engaging experience for the user. The page content presented in a clear and accessible fashion for the user to understand.
+  The page design has been specifically created to portray a clean, fun and engaging experience for the user. The page content is presented in a clear and accessible fashion for the user to understand.
 
 -  #### **Main Page.**
 
@@ -60,7 +60,7 @@ The footer has been designed to be informative and simple in it's presentation. 
 
 Below the navbar is the main game play area. This has the scoreboard clearly defined at the top of the page and the player feedback section immediately below. The game icons are laid out beneath that and they are animated to clearly show the user which one they are engaging with. The rules and how to play the game are in the box below giving the user clear instructions on how to play.
 
-There are two altrnatives to this screen when the game is either won or lost. The dialogue boxes are coloured appropriately depending on the scenario and the text is either celebratory or comiseratory.
+There are two altrnatives to the game screen when the game is either won or lost. The dialogue boxes are coloured appropriately depending on the scenario and the text is either celebratory or comiseratory.
 
 - ## **WIN SCREEN**
 
@@ -72,6 +72,12 @@ There are two altrnatives to this screen when the game is either won or lost. Th
 
 <p align="center">
  <img src="assets/images/screenshot-lose.png"?raw=true alt="image of the  lose screen"></p>
+ <p align="center">
+
+  - ## **CONTACT PAGE**
+
+  <p align="center">
+ <img src="assets/images/screenshot-contact.png"?raw=true alt="image of the  lose screen"></p>
  <p align="center">
 
 - ## **COLOUR PALETTE.**
