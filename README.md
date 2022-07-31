@@ -19,19 +19,19 @@
 - <a href="#fa">Future Aspirations</a>
 - <a href="#tools">Tools used and Coding Inspiration</a>
 
-<p align="right"><a href="#home">Top of page</a></p><p id="intro"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="intro"></p>
 
 ## **INTRODUCTION.**
 
 This web application has been developed in order to apply the topics covered within the recent Javascript essential course work as part of the Code Institute Full Stack Software Developer diploma. The website represents a Rock Paper Scissors Lizard Spock game based on the premise presented in the popular TV series, 'The Big Bang Theory'. This game pits the user against the computer in a game of chance. To view the full website please use the clickable link via the heading at the top of this page or alternatively, click on the following link to access the site: [Rock Paper Scissors Lizard Spock](https://grumpyrobot21.github.io/Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials/)
 
-<p align="right"><a href="#home">Top of page</a></p><p id="dg"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="dg"></p>
 
 ## **DESIGN GOALS.**
 
 The brief was to create an interactive application that presents users with an enjoyable game of chance. The principle features included are a game that employs a pattern matching functionality with a limited number of tries before the game is completed. The score must be tracked and it must provide the facility to play against 'the computer'. In addition a competitive element has been added with colourful and entertaining visual and audio cues to engage the users interest. There is also a contact page for users to submit suggestions or feedback.
 
-<p align="right"><a href="#home">Top of page</a></p><p id="df"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="df"></p>
 
 ## **DESIGN FEATURES.**
 
@@ -58,9 +58,9 @@ The footer has been designed to be informative and simple in it's presentation. 
  <img src="assets/images/screenshot.png"?raw=true alt="image of the home page"></p>
  <p align="center">
 
-Below the navbar is the main game play area. This has the scoreboard clearly defined at the top of the page and the player feedback section immediately below. The game icons are laid out beneath that and they are animated to clearly show the user which one they are engaging with. The rules and how to play the game are in the box below giving the user clear instructions on how to play.
+Below the navbar is the main game play area. This has the scoreboard clearly defined at the top of the page and the player feedback section immediately below. The game icons are laid out beneath that and they are animated to clearly show the user which one they are engaging with. The rules and how to play the game are in the box below giving the user clear instructions on how to play. This is finished off with a clickable animated icon which enables the user to get in touch with feedback or suggestions. 
 
-There are two altrnatives to the game screen when the game is either won or lost. The dialogue boxes are coloured appropriately depending on the scenario and the text is either celebratory or comiseratory.
+There are two alternatives to the game screen when the game is either won or lost. The dialogue boxes are coloured appropriately depending on the scenario and the text is either celebratory or comiseratory.
 
 - ## **WIN SCREEN**
 
@@ -80,6 +80,16 @@ There are two altrnatives to the game screen when the game is either won or lost
  <img src="assets/images/screenshot-contact.png"?raw=true alt="image of the  lose screen"></p>
  <p align="center">
 
+ This page is clear and simple to use. The design continues with the engaging and fun concepts as used on the main game play page. The page footer has had a link to the home page added for navigation purposes. The button under the form submits the form details.
+
+  - ## **MESSAGE CONFIRMATION PAGE**
+
+  <p align="center">
+ <img src="assets/images/screenshot-thanks.png"?raw=true alt="image of the  lose screen"></p>
+ <p align="center">
+
+This page is clear and simple to use. The design continues with the engaging and fun concepts as used on the main game play page. The information confirms that the user message has been sent and provides a link to return to the main page to continue playing the game.
+
 - ## **COLOUR PALETTE.**
   The colour palette is purposefully simple and clean. It consists of the following six colour choices: 
 
@@ -93,7 +103,7 @@ These colours provide a high level of contrast for users with impaired vison, as
   The font used for the page is Amatic SC. It is a simple but effective hand drawn webfont. It was initially designed by Vernon Adams, and concieved of to be used freely across the internet. It features both Latin and Hebrew alphabets. The Latin was initially designed by Vernon Adams. The Hebrew was designed by Ben Nathan, who also revised the Latin design. Thomas Jockin respaced and kerned the whole font.
 ---
 
-<p align="right"><a href="#home">Top of page</a></p><p id="us"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="us"></p>
 
 ## **USER STORY.**
 
@@ -105,21 +115,35 @@ For the purposes of this story, our 'First time' user will be called 'Bob'. Bob 
 
 - Each time a game is won or lost the game automatically resets after a brief pause.
 
+- Bob has some feedback for the game deisgners and clicks on the message icon clearly defined on the game page. He is taken to the message screen. Here Bob is unable to submit his message until he has fully completed all of the fields. This is clearly indicated in a concise and helpful manner. Bob easily fills out the prerequisite information and submits the form. He is immediately informed that his message has been received and provided with a clickable icon that takes Bob back to the game play screen to continue playing.
+
 * ### **Returning Users.**
   The game is designed to be simple and fun in order to encourage users to come back and try their luck as many times as they want.
 
 ---
 
-<p align="right"><a href="#home">Top of page</a></p><p id="wire"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="wire"></p>
 
 ## **WIREFRAMES.**
 
-For the main page the wireframe preliminary layout design can be seen below. This was created using [Balsamiq](https://balsamiq.com/):
+For the site pages the wireframe preliminary layout designs can be seen below. These were created using [Balsamiq](https://balsamiq.com/):
+
+- Main Page
 
 <p align="center">
     <img src="assets/images/wireframe.png"?raw=true alt=" wireframe design prototype used for the site design"></p>
 
-<p align="right"><a href="#home">Top of page</a></p><p id="test"></p>
+- Contact Page
+
+<p align="center">
+    <img src="assets/images/wireframe-contact.png"?raw=true alt=" wireframe design prototype used for the site design"></p>
+
+- Message Sent Page
+
+<p align="center">
+    <img src="assets/images/wireframe-thanks.png"?raw=true alt=" wireframe design prototype used for the site design"></p>
+
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="test"></p>
 
 ## **TESTING.**
 
@@ -180,8 +204,7 @@ The colour contrast was AAA rated.
 Friends and family were the resource used to extensively test the usability of the web application. All page links and button functionality were tested including ascertaining that all social media links opened in separate tabs and that all icon play buttons were correctly configured and provided the correct feedback to the user, as indicated. The page was also subjected to the peer code review slack channel through Code Institute to be stringently put through it's paces.
 
 ---
-
-<p align="right"><a href="#home">Top of page</a></p><p id="dep"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="dep"></p>
 
 ## **DEPLOYMENT.**
 
@@ -213,23 +236,23 @@ Should you wish to 'Fork' or 'Clone' the repository please follow these instruct
 
 ---
 
-<p align="right"><a href="#home">Top of page</a></p><p id="pib"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="pib"></p>
 
 ## **BUGS.**
 
 Apart from the usual spelling mistakes and formatting to tidy up, a number of bugs were identified during the testing phase and updated. This site was built from a responsive persepctive from the start (learned from project 1). The main bugs encountered were in the javascript. There was an issue when the sound files would not play when the game was completed. This was resolved by changing the relative path information to get the files to respond. Also, getting the win function to work took some slack help from the code institute channel to solve. Eventually calling the correct functions was the solution to resolving that bug.
 
-There will undoubtedly be other issues that I am currently unaware of that will be spotted by wiser heads. It has been a very erewarding process despite the very steep learning curve.
+There will undoubtedly be other issues that I am currently unaware of that will be spotted by wiser heads. It has been a very rewarding process despite the very steep learning curve.
 
 ---
 
-<p align="right"><a href="#home">Top of page</a></p><p id="fa"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="fa"></p>
 
 ## **FUTURE ASPIRATIONS.**
 
-I would eventually like to keep a high score tally of multiple game winners with the number of games won in a row. This would provide additional incentive for users to keep playing.
+I would eventually like to add functionality for keeping a high score tally of multiple game winners with the number of games won in a row. This would provide additional incentive for users to keep playing.
 
-<p align="right"><a href="#home">Top of page</a></p><p id="tools"></p>
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="tools"></p>
 
 ## **TOOLS USED AND CODING INSPIRATION.**
 
@@ -259,4 +282,4 @@ The following tools, pages and tutorials were invaluable in helping me complete 
 - [Code Institute Tutor Support. Invaluable support and assistance. Excellent course material.](https://codeinstitute.net/ie/)
 - [Slack community. Community support, shared experience and motivation.](https://slack.com/intl/en-ie/)
 
-<p align="right"><a href="#home">Top of page</a></p>
+<p align="right"><a href="#home">Return to table of contents</a></p>
