@@ -131,7 +131,8 @@ footer {
 #media1:hover,
 #media2:hover,
 #media3:hover {
-  transform: scale(1.25);
+  transform: scale(1.35);
+  color: #1adbf4;
 }
 
 /* contact page form styling */
