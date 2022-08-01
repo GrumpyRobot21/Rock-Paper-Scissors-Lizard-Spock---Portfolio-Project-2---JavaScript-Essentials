@@ -15,7 +15,7 @@ const spockD = document.getElementById("v");
 /**
  * Random choice generator for computer player
  */
-function getcompChoice() {
+const getcompChoice = () => {
   let choices = ["r", "p", "s", "l", "v"];
   let randomNum = Math.floor(Math.random() * 5);
   return choices[randomNum];
@@ -24,19 +24,23 @@ function getcompChoice() {
 /**
  * converts user and computer choices into text for results display
  */
-function changeToText(letter) {
-  if (letter === "r") return "Rock";
-  if (letter === "p") return "Paper";
-  if (letter === "s") return "Scissors";
-  if (letter === "l") return "Lizard";
-  return "Spock";
+const changeToText = (letter) => {
+
+  return {
+    r: "Rock",
+    p: "Paper",
+    s: "Scissors",
+    l: "Lizard",
+    v: "Spock"
+  } [letter];
 }
 
 /**
  * Declares win for user when computer loses and amends user score total
  */
-function win(uchoice, compChoice) {
+const win = (uchoice, compChoice) => {
   uscore++;
+
   // Briefly changes background color of user score div to indicate the win
   function changeCol() {
     document.getElementById("userback").style.background = "#1adbf4";
@@ -52,10 +56,12 @@ function win(uchoice, compChoice) {
   }
 
   if (uscore === 10) {
+
     // calls endGame function if user score is 10
     endGame();
   } else {
-    //displays numerical score results for user and computer and game continues
+
+    //if user score is less than 10 displays numerical score results for both user and computer and game continues
     uScoreS.innerHTML = uscore;
     compScoreS.innerHTML = comScore;
     resultsP.innerHTML = `${changeToText(uchoice)} beats ${changeToText(
@@ -67,8 +73,9 @@ function win(uchoice, compChoice) {
 /**
  * Declares loss for user when computer wins and amends computer score total
  */
-function lose(uchoice, compChoice) {
+const lose = (uchoice, compChoice) => {
   comScore++;
+
   // Briefly changes background color of comp score div to indicate the win
   function setToBlue() {
     document.getElementById("compback").style.background = "#1adbf4";
@@ -84,10 +91,12 @@ function lose(uchoice, compChoice) {
   }
 
   if (comScore === 10) {
+
     // calls endGame function if computer score is 10
     endGame();
   } else {
-    //displays numerical score results for user and computer and game continues
+
+    //if computer score is less than 10 displays numerical score results for both user and computer and game continues
     uScoreS.innerHTML = uscore;
     compScoreS.innerHTML = comScore;
     resultsP.innerHTML = `${changeToText(
@@ -99,7 +108,7 @@ function lose(uchoice, compChoice) {
 /**
  * Declares a draw if user and computer make same choice
  */
-function draw(uchoice, compChoice) {
+const draw = (uchoice, compChoice) => {
   resultsP.innerHTML = `${changeToText(uchoice)} equals ${changeToText(
     compChoice
   )}. It's a Draw!!`;
@@ -108,10 +117,12 @@ function draw(uchoice, compChoice) {
 /**
  * Declares winner after 10 rounds then resets game.
  */
-function endGame(win, lose) {
+const endGame = () => {
   if (comScore === 10) {
+
+    // changes result output background-colour for lose scenario
     let element = document.querySelector(".score");
-    element.style.backgroundColor = "red"; // changes result output background-colour for lose scenario
+    element.style.backgroundColor = "red"; 
     resultsP.innerHTML = `Bad luck, the computer won ${comScore} rounds. You lost the game!!! (The Game will restart shortly. Have another go!).`;
 
     // clears icon images from gameplay area
@@ -124,8 +135,10 @@ function endGame(win, lose) {
     );
     loseSound.play();
   } else if (uscore === 10) {
+
+    // changes result output background-colour for win scenario
     let element = document.querySelector(".score");
-    element.style.backgroundColor = "green"; // changes result output background-colour for win scenario
+    element.style.backgroundColor = "green"; 
     resultsP.innerHTML = `Well done, you won ${uscore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`;
 
     // clears icon images from gameplay area
@@ -148,7 +161,7 @@ function endGame(win, lose) {
 /**
  * Defines winning scenarios, losing scenarios and draw scenarios
  */
-function playGame(uchoice) {
+const playGame = (uchoice) => {
   const compChoice = getcompChoice();
   switch (uchoice + compChoice) {
     case "rs":
@@ -188,7 +201,7 @@ function playGame(uchoice) {
 /**
  * Gameplay event listeners for player icon choices
  */
-function main() {
+const main = () => {
   rockD.addEventListener("click", function () {
     playGame("r");
   });
