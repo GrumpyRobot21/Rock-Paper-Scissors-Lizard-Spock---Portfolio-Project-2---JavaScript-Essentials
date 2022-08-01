@@ -36,7 +36,7 @@ const changeToText = (letter) => {
 }
 
 // activates background color of either score div to indicate the winner
-function changeCol(id,color) {
+const changeCol = (id, color) => {
   document.getElementById(id).style.background = color;
 }
 
@@ -47,14 +47,14 @@ const win = (uchoice, compChoice) => {
   uscore++;
 
   // Briefly changes background color of user score div to indicate the win
-    changeCol("userback", "#1adbf4"); {
+  changeCol("userback", "#1adbf4"); {
     setTimeout(function () {
       setNormal();
     }, 100);
   }
 
   // changes user score div back to original colour
-  function setNormal() {
+  const setNormal = () => {
     document.getElementById("userback").style.background = "#2f54ce";
   }
 
@@ -86,7 +86,7 @@ const lose = (uchoice, compChoice) => {
     }, 100);
   }
   // changes computer score div back to original colour
-  function setNormal() {
+  const setNormal = () => {
     document.getElementById("compback").style.background = "#2f54ce"
   }
 
@@ -122,7 +122,7 @@ const endGame = () => {
 
     // changes result output background-colour for lose scenario
     let element = document.querySelector(".score");
-    element.style.backgroundColor = "red"; 
+    element.style.backgroundColor = "red";
     resultsP.innerHTML = `Bad luck, the computer won ${comScore} rounds. You lost the game!!! (The Game will restart shortly. Have another go!).`;
 
     // clears icon images from gameplay area
@@ -138,7 +138,7 @@ const endGame = () => {
 
     // changes result output background-colour for win scenario
     let element = document.querySelector(".score");
-    element.style.backgroundColor = "green"; 
+    element.style.backgroundColor = "green";
     resultsP.innerHTML = `Well done, you won ${uscore} rounds. Live long and prosper!!! (The Game will restart shortly. Have another go!).`;
 
     // clears icon images from gameplay area
