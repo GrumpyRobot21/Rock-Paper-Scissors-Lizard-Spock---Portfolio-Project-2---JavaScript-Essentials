@@ -35,6 +35,11 @@ const changeToText = (letter) => {
   } [letter];
 }
 
+// activates background color of either score div to indicate the winner
+function changeCol(id,color) {
+  document.getElementById(id).style.background = color;
+}
+
 /**
  * Declares win for user when computer loses and amends user score total
  */
@@ -42,13 +47,11 @@ const win = (uchoice, compChoice) => {
   uscore++;
 
   // Briefly changes background color of user score div to indicate the win
-  function changeCol() {
-    document.getElementById("userback").style.background = "#1adbf4";
+    changeCol("userback", "#1adbf4"); {
     setTimeout(function () {
       setNormal();
     }, 100);
   }
-  changeCol();
 
   // changes user score div back to original colour
   function setNormal() {
@@ -77,14 +80,11 @@ const lose = (uchoice, compChoice) => {
   comScore++;
 
   // Briefly changes background color of comp score div to indicate the win
-  function setToBlue() {
-    document.getElementById("compback").style.background = "#1adbf4";
+  changeCol("compback", "#1adbf4"); {
     setTimeout(function () {
       setNormal();
     }, 100);
   }
-  setToBlue();
-
   // changes computer score div back to original colour
   function setNormal() {
     document.getElementById("compback").style.background = "#2f54ce"
