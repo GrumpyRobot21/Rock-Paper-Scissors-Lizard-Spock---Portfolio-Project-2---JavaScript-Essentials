@@ -168,7 +168,7 @@ For the site pages the wireframe preliminary layout designs can be seen below. T
   The Chrome dev tool - Lighthouse - Tests the overall performance, Accessibility, Web Development best practices and SEO. The following results were confirmed:
 
 <p align="center">
-    <img src="assets/images/lighthouse-test.webp"?raw=true alt=" Chrome dev tools lighthouse testing results"></p>
+    <img src="assets/images/lighthouse-test.png"?raw=true alt=" Chrome dev tools lighthouse testing results"></p>
 
 - ### **Responsiveness Testing**
 
@@ -242,6 +242,8 @@ Should you wish to 'Fork' or 'Clone' the repository please follow these instruct
 
 Apart from the usual spelling mistakes and formatting to tidy up, a number of bugs were identified during the testing phase and updated. This site was built from a responsive persepctive from the start (learned from project 1). The main bugs encountered were in the javascript. There was an issue when the sound files would not play when the game was completed. This was resolved by changing the relative path information to get the files to respond. Also, getting the win function to work took some slack help from the code institute channel to solve. Eventually calling the correct functions was the solution to resolving that bug.
 
+I discussion with my mentor I was also challenged to improve the qquality of the codein the script file. I was encouraged to implement arrow functions and also rewrite the changToText function as an object instead using a long chain of IF statements. I also had to reduce duplicated code from within a function to simplify and reduce the amount of code. These challenges were good fun and definitley made me think harder about the code being written.
+
 There will undoubtedly be other issues that I am currently unaware of that will be spotted by wiser heads. It has been a very rewarding process despite the very steep learning curve.
 
 ---
@@ -280,6 +282,6 @@ The following tools, pages and tutorials were invaluable in helping me complete 
 - [Media Genesis Responsive Design Checker. Responsiveness testing.](https://responsivedesignchecker.com/)
 - [Wave Accessibilty testing tool. Accessibility and Contrast testing.](https://wave.webaim.org/)
 - [Code Institute Tutor Support. Invaluable support and assistance. Excellent course material.](https://codeinstitute.net/ie/)
-- [Slack community. Community support, shared experience and motivation.](https://slack.com/intl/en-ie/)
+- [Slack community (Victor Miclovich - Mentor) ). Community support, shared experience, learning and motivation.](https://slack.com/intl/en-ie/)
 
 <p align="right"><a href="#home">Return to table of contents</a></p>

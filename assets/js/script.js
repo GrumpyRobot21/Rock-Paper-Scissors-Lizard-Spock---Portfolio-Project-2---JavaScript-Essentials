@@ -22,7 +22,7 @@ const getcompChoice = () => {
 }
 
 /**
- * converts user and computer choices into text for results display
+ * Object to convert user and computer choices into text for results display
  */
 const changeToText = (letter) => {
   return {
@@ -34,7 +34,7 @@ const changeToText = (letter) => {
   } [letter];
 }
 
-// activates background color of either score div to indicate the winner
+// activates background color change of either score div to indicate the winner
 const changeCol = (id, color) => {
   document.getElementById(id).style.background = color;
 }
