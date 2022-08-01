@@ -25,7 +25,6 @@ const getcompChoice = () => {
  * converts user and computer choices into text for results display
  */
 const changeToText = (letter) => {
-
   return {
     r: "Rock",
     p: "Paper",
@@ -91,7 +90,6 @@ const lose = (uchoice, compChoice) => {
   }
 
   if (comScore === 10) {
-
     // calls endGame function if computer score is 10
     endGame();
   } else {

@@ -119,7 +119,6 @@ footer {
 }
 
 /* Footer media icon styling and animation */
-
 #media1,
 #media2,
 #media3 {
@@ -136,7 +135,6 @@ footer {
 }
 
 /* contact page form styling */
-
 .form-info,
 #formhead {
   display: flex;
@@ -190,7 +188,6 @@ textarea::placeholder {
 }
 
 /* Contact page action button */
-
 #away-team {
   display: flex;
   align-items: center;
@@ -198,7 +195,6 @@ textarea::placeholder {
 }
 
 /* contact button styling */
-
 .send {
   background: rgb(47, 84, 206);
   border: 3px solid white;
@@ -218,7 +214,6 @@ textarea::placeholder {
 }
 
 /* thanks page message div styling */
-
 .message-sent {
   border: 3px solid white;
   border-radius: 4px;
@@ -244,7 +239,6 @@ textarea::placeholder {
 }
 
 /* media queries for responsive design on smaller screen sizes */
-
 @media screen and (max-width: 600px) {
   .results {
     margin: auto 15%;
